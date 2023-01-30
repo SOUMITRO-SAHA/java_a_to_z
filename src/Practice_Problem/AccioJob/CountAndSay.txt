@@ -1,0 +1,70 @@
+import java.io.*;
+import java.util.*;
+
+class Main{
+    public static void main(String args[]) throws IOException {
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(read.readLine());
+
+        Solution ob = new Solution();
+
+        System.out.println(ob.countandsay(n));
+    }
+}
+class Solution
+{
+    public String countandsay(int n) {
+        // Steps: 1. Count the current number
+        // Steps: 2. Update the Next Number
+        // Steps: 3. Repeat the task for n times
+
+        String ans = "1";
+        for (int i = 2; i <= n; i++) {
+            long currentNumber = Long.parseLong(ans);
+            if(i == 2)
+                ans = "11";
+            else
+                ans = countAndUpdate(currentNumber);
+        }
+
+        return ans;
+    }
+    String countAndUpdate(long n){
+        long []numArray = intToArray(n);
+        StringBuilder sb = new StringBuilder();
+        int position = 0;
+        // Iterating the Array:
+        int i = 0;
+        while (i < numArray.length){
+            int count = 0;
+            long currentNumber = numArray[i];
+            while (position < numArray.length && numArray[position] == currentNumber){
+                count++;
+                position++;
+            }
+
+            i = position;
+
+
+            // Updating the SB:
+            sb.append(count);
+            sb.append(currentNumber);
+        }
+
+        return sb.toString();
+    }
+    long []intToArray(long n){
+        int len = (int)Math.log10(n);
+        long[] ans = new long[len+1];
+        int i = len;
+        while(n > 0){
+            long last = n % 10;
+            if(i >= 0){
+                ans[i--] = last;
+            }
+            n /= 10;
+        }
+        return ans;
+    }
+
+}
