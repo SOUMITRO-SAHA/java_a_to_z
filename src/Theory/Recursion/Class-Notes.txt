@@ -1,0 +1,103 @@
+======================== [Recursion on Array || Class 3 ] ==================================
+[Q-1]
+// My Solution:
+class RecursionClass3{
+    // Q 1:
+    boolean isSortedInAscendingOrder(int []arr){
+        return helper(arr, 0, arr.length -1);
+    }
+    boolean helper(int []arr, int s, int e){
+        // Base Case:
+        if(s == e)
+            return true;
+        if(s > e)
+            return false;
+        // Condition:
+        if(arr[s] > arr[s+1]){
+            return false;
+        }
+
+        // Recursion Call:
+        return helper(arr, s+1,e);
+    }
+}
+
+// Best Solution:
+boolean isSortedInAscendingOrder(int []arr, int index){
+    if(index == arr.length -1)
+        return true;
+    return arr[index] < arr[index + 1] && isSortedInAscendingOrder(arr, index+1);
+}
+
+[Q-2] : Linear Search
+// My Solution:
+int linearSearch(int []arr,int index, int key){
+    // Base Case:
+    if(arr[index] == key)
+        return index;
+    if(index == arr.length-1)
+        return -1;
+
+    return linearSearch(arr, index+1, key);
+}
+
+[Q-3] : Linear Search (from last index)
+// My Solution:
+int linearSearchFromLast(int []arr, int index, int key){
+    if(index == -1)
+        return -1;
+    if(arr[index] == key)
+        return index;
+    return linearSearchFromLast(arr, index -1, key);
+}
+
+[Q-4](Method-1)
+ArrayList<Integer> res = new ArrayList<>();
+ArrayList<Integer> allIndexesOfElement(int []arr, int target, int index){
+    // Base Case:
+    if(index == arr.length)
+        return res;
+    if(arr[index] == target){
+        res.add(index);
+    }
+    // Recursive Call:
+    return allIndexesOfElement(arr,target, index +1);
+}
+
+[Q-4](Method-2)
+ArrayList<Integer> allIndexesOfElement(int []arr, int target, int index, ArrayList<Integer> list){
+    // Base Case:
+    if(index == arr.length)
+        return list;
+    if(arr[index] == target){
+        list.add(index);
+    }
+    // Recursive Call:
+    return allIndexesOfElement(arr,target, index +1, list);
+}
+
+[Q-5] Binary Search Using Recursion:
+int binarySearchUsingRecursion(int []arr,int target, int st, int end){
+    int mid = st + (end - st)/2;
+    // Base Case:
+    if(st > end)
+        return -1;
+    if (arr[mid] == target) {
+        return mid;
+    }
+
+    // Recursive Call:
+    else if(arr[mid] < target){
+        return  binarySearchUsingRecursion(arr, target, mid +1, end);
+    }
+
+    return binarySearchUsingRecursion(arr,target,st, mid -1);
+}
+
+======================== [Merge Sort|| Class 5 ] ==================================
+Step-1: Divide the Array into 2 parts.
+Step-2: Get 2 parts sorted via recursion.
+Step-3: Merge the sorted parts.
+
+Time-Complexity:
+1. At every level N element is merged. So

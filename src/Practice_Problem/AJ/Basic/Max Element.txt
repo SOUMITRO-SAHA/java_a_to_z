@@ -1,0 +1,41 @@
+/*
+Max Element
+https://course.acciojob.com/idle?question=219567a8-bc17-4f2f-97aa-3ab8a5c8ac86
+*/
+import java.util.*;
+import java.io.*;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+
+		// String to Int ArrayList:
+        ArrayList<Integer> arr = stringToArrayList(str);
+
+		System.out.println(maxEl(arr,Integer.MIN_VALUE, 0));
+    }
+	static int maxEl(ArrayList<Integer> arr, int max, int n){
+		// Base Case:
+		if(n == arr.size() -1)
+			return max;
+		// Recursive Call:
+		int currentEl = arr.get(n);
+		max = Math.max(max, currentEl);
+
+		return maxEl(arr,max,n+1);
+
+	}
+	static ArrayList<Integer> stringToArrayList(String s){
+	    String []stArray = s.split(" ");
+	    ArrayList<Integer> res = new ArrayList<>();
+
+	    // Counting the Length:
+	    for(int i=0; i<stArray.length; i++){
+	        int num = Integer.parseInt(stArray[i]);
+            res.add(num);
+	    }
+
+	    return res;
+	}
+}

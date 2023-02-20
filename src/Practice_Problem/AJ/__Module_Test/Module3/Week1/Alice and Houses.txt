@@ -1,0 +1,6 @@
+/*
+Alice and Houses
+https://course.acciojob.com/idle?question=766a22e6-c984-4051-8256-0fd22f4abdcd
+
+Solution Video: https://vimeo.com/787278712/55f75994b8?embedded=true&source=vimeo_logo#t=8m16s
+*/

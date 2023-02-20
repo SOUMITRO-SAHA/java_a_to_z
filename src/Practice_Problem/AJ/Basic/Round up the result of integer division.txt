@@ -1,0 +1,21 @@
+/*
+Round up the result of integer division
+https://course.acciojob.com/idle?question=1ac56810-c410-4859-ad4e-8f0f833ef1c0
+ */
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int marks_1 = sc.nextInt();
+        int marks_2 = sc.nextInt();
+        int total_marks = sc.nextInt();
+
+        int result = ((marks_1 + marks_2) * 100) / total_marks;
+        System.out.println(result+"%");
+    }
+}

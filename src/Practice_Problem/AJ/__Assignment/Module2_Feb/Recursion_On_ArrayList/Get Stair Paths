@@ -1,0 +1,42 @@
+/*
+Get Stair Paths
+https://course.acciojob.com/idle?question=56fc9309-184a-4723-b8d0-839cbef69b83
+ */
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        ArrayList<String> paths = getStairPaths(n);
+        System.out.println(paths);
+    }
+
+    public static ArrayList<String> getStairPaths(int n) {
+        ArrayList<String > paths = new ArrayList<>();
+        getStairPathsList(n, 0,"", paths);
+        return paths;
+    }
+
+    private static void getStairPathsList(int n, int i, String psf, ArrayList<String> ans) {
+        // Base Case:
+        if (i == n) {
+            ans.add(psf);
+            return;
+        }
+        // Recursive Call:
+        // First, Call for Only 1 step at a time:
+        getStairPathsList(n,i+1, psf+'1', ans);
+        // Second Call, for Only 2 step at a time:
+        if(n - i >= 2)
+            getStairPathsList(n,i+2, psf+'2', ans);
+
+        // Third Call, for Only 3 step at a time:
+        if(n - i >= 3)
+            getStairPathsList(n,i+3, psf+'3', ans);
+    }
+}
+
+
+

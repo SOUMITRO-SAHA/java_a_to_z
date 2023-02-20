@@ -1,0 +1,33 @@
+/*
+Change Pi
+https://course.acciojob.com/idle?question=08ae105d-3f70-4a75-9e42-3597f46397d3
+ */
+
+import java.util.*;
+class Solution {
+    static StringBuilder sb = new StringBuilder();
+    public static String changePi(String str) {
+        // Base Case:
+        if(str.isEmpty()){
+            return sb.toString();
+        }
+
+        // Recursive Call:
+        // Condition:
+        if(str.startsWith("pi")){
+            sb.append("3.14");
+            return changePi(str.substring(2));
+        }
+        else{
+            sb.append(str.charAt(0));
+            return changePi(str.substring(1));
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        System.out.println(Solution.changePi(str));
+    }
+}

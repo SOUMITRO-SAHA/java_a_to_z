@@ -1,0 +1,63 @@
+/*
+https://course.acciojob.com/idle?question=89a1e5cf-4f5b-48e5-85c2-0535423aeedb
+*/
+
+import java.io.*;
+import java.util.*;
+
+class Solution{
+    public String mergeStrings(String s1,String s2){
+        StringBuilder sb = new StringBuilder();
+        // Variable:
+        int firstString = 0;
+        int secondString = 0;
+
+        //Total Len
+        int s1Len = s1.length();
+        int s2Len = s2.length();
+        int len = s1Len < s2Len ? s1Len : s2Len;
+
+        //Iteration
+        for(int i=0; i < 2*len; i++){
+            if(i%2 == 0){
+                sb.append(s1.charAt(firstString++));
+            }
+            else{
+                sb.append(s2.charAt(secondString++));
+            }
+        }
+
+        // if String left:
+        if(len != s1Len){
+            sb.append(s1.substring(len, s1Len));
+        }
+        else{
+            sb.append(s2.substring(len, s2Len));
+        }
+
+        // Return
+        return sb.toString();
+    }
+}
+public class Main {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        String s1 = input.next(), s2 = input.next();
+        Solution Obj = new Solution();
+        System.out.println(Obj.mergeStrings(s1,s2));
+    }
+}
+
+/*
+abc
+def
+
+hsudoiwiewe
+ajdksmfdbfndbslfdljflsdkfj
+
+== hasjuddkosimwfidebwfendbslfdljflsdkfj
+== hasjuddkosimwfidebwfendbslfdljflsdkfj
+---
+== hasjuddkosidbslfdljflsdkfj
+
+ */

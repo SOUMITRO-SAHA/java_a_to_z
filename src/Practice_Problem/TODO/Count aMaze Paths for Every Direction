@@ -1,0 +1,57 @@
+/*
+Count aMaze Paths for Every Direction
+https://course.acciojob.com/idle?question=2875c8b1-6a6b-4946-9aed-ce1ac886f2e0
+ */
+import java.util.*;
+
+public class Main {
+    static int count = 0;
+    static boolean flag = false;
+    static int countAllPath(int dr, int dc)
+    {
+        getCountOfAllPaths(dr,dc,1,1, "");
+        return count;
+    }
+
+    private static void getCountOfAllPaths(int dr, int dc, int sr, int sc, String psf) {
+        // Base Case:
+        if (sr == dr && sc == dc) {
+            count++;
+            System.out.println(psf);
+            return;
+        }
+        if (sc < 1 || sr < 1 || sr > dr || sc > dc) {
+            return;
+        }
+
+        // Recursive Call:
+        // Horizontal Jump:
+        getCountOfAllPaths(dr, dc, sr, sc + 1, psf+'r');
+
+        // Vertical Jump:
+        getCountOfAllPaths(dr, dc, sr+1, sc, psf+'d');
+
+        // Diagonal Jump:
+        getCountOfAllPaths(dr, dc, sr+1, sc+1,psf+"r-d");
+
+        if(!flag){
+            // Diagonal Jump (Upper Row Right to lower row left || right left-down right)
+            getCountOfAllPaths(dr, dc, sr+1, sc-1,psf+"l-d");
+        }
+        else{
+            // Diagonal Jump (lower row left to Upper Row Right)
+            getCountOfAllPaths(dr, dc, sr-1, sc+1,psf+"r-u");
+        }
+
+        // Updating the flag:
+        flag = true;
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int m= sc.nextInt();
+        System.out.println(countAllPath(n,m));
+    }
+}

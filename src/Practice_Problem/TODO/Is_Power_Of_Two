@@ -1,0 +1,28 @@
+import java.util.*;
+
+class Solution{
+    public static boolean isPowerOfTwo(int n) {
+        // Calling
+        return checkIsPowerOfTwo(n, 2);
+    }
+
+    public static boolean checkIsPowerOfTwo(int n, int x){
+        // Base Case:
+        if(x > n)
+            return false;
+
+        if(n == x || n == 1 || x * 2 == n)
+            return true;
+
+        // Recursive Call
+        return checkIsPowerOfTwo(n/x, (x*x));
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();
+        System.out.println(Solution.isPowerOfTwo(n));
+    }
+}

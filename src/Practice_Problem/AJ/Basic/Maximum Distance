@@ -1,0 +1,38 @@
+/*
+Maximum Distance
+https://course.acciojob.com/idle?question=35cb9478-a376-4af3-bfd4-1289d43e3278
+ */
+import java.util.*;
+
+class Accio{
+    static int MaximumDistance(int N,int[] arr){
+        HashMap<Integer,Integer> h = new HashMap<>();
+        int maxDistance = 0;
+        for (int i = 0; i < N; i++) {
+            if(h.containsKey(arr[i])){
+                int currentIdx = h.get(arr[i]);
+                int currentDistance = Math.abs(i - currentIdx);
+                maxDistance = Math.max(maxDistance, currentDistance);
+            }
+            else{
+                h.put(arr[i], i);
+            }
+        }
+        return maxDistance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int nums[]=new int[n];
+        for(int i = 0; i < n; i++)
+        {
+            nums[i] = sc.nextInt();
+        }
+        Accio obj = new Accio();
+        int ans=obj.MaximumDistance(n,nums);
+        System.out.println(ans);
+    }
+}

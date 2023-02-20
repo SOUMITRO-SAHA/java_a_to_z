@@ -1,0 +1,61 @@
+/*
+String Encodings
+https://course.acciojob.com/idle?question=38c7e0ba-2e2e-40a2-b207-e6f6171a5fbd
+*/
+import java.util.*;
+
+public class Main {
+    public static void printEncodings(String str) {
+        // ArrayList
+        ArrayList<String> arr = new ArrayList<>();
+
+        // getting all encoding:
+        getEncoding(str, "", arr);
+
+        // Sorting the ArrayList:
+        Collections.sort(arr);
+
+        // Printing the ArrayList:
+        for (String s :
+                arr) {
+            System.out.println(s);
+        }
+
+    }
+
+    private static void getEncoding(String str, String asf, ArrayList<String> arr) {
+        // Base Case:
+        if (str.length() == 0) {
+            arr.add(asf);
+            return;
+        }
+        if (str.charAt(0) == '0') {
+            return;
+        }
+        char ch = str.charAt(0);
+        int currentNumber = ch - '0';
+        char mapping = getMapping(currentNumber);
+
+        // Left Call:
+        getEncoding(str.substring(1), asf + mapping, arr);
+
+        // Condition for Right Call:
+        if (str.length() > 1) {
+            int equivalentNumber = Integer.parseInt(str.substring(0, 2));
+            if (equivalentNumber <= 26) {
+                char mappingRight = getMapping(equivalentNumber);
+                getEncoding(str.substring(2), asf+mappingRight, arr);
+            }
+        }
+    }
+
+    static char getMapping(int no) {
+        return (char) (no - 1 + 'a');
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        printEncodings(str);
+    }
+}
+

@@ -1,0 +1,40 @@
+/*
+Old Phone Keypad
+https://course.acciojob.com/idle?question=394e5cf7-8fef-4439-8d0d-3b2583176bf0
+ */
+import java.util.*;
+
+class Main {
+    static ArrayList <String> OldPhone(int n, int[] keys){
+        String []ref = {"", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TU", "VWX", "YZ"};
+        ArrayList<String> result = new ArrayList<>();
+        getOldPhoneKeysList("",0, n, keys, ref, result);
+        return result;
+    }
+
+    private static void getOldPhoneKeysList(String p,int k, int n, int[] keys, String[] ref, ArrayList<String> result) {
+        // Base Case:
+        if (k == n) {
+            result.add(p);
+            return;
+        }
+
+        // Recursive Call:
+        String currentKeys = ref[keys[k]];
+        for (int i = 0; i < currentKeys.length(); i++) {
+            char currentChar = currentKeys.charAt(i);
+            getOldPhoneKeysList(p+currentChar,k+1, n, keys, ref, result);
+        }
+    }
+
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] keys = new int[n];
+        for(int i=0;i<n;++i){
+            keys[i] = sc.nextInt();
+        }
+        ArrayList <String> ans=OldPhone(n,keys);
+        for(String i:ans) System.out.print(i+" ");
+    }
+}

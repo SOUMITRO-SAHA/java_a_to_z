@@ -1,0 +1,53 @@
+/*
+Lucky Number
+https://course.acciojob.com/idle?question=6d37d97f-e4d9-4d08-8bde-d3a971bc5cda
+ */
+
+import java.io.*;
+
+class Main {
+    public static void main(String args[]) throws IOException {
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(read.readLine());
+        Solution ob = new Solution();
+        System.out.println(ob.isLuckyNumber(n));
+
+    }
+}
+
+class Solution {
+    static int afterSum(int n){
+        int sum  = 0;
+        while(n != 0){
+            int dig = n % 10;
+            sum += dig * dig;
+            n /= 10;
+        }
+        return sum;
+    }
+    static boolean isLucky(int n){
+        int currentNumber = afterSum(n);
+
+        // Base Case:
+        // Most Occur Case:
+        if(currentNumber == 145 || currentNumber == 20)
+            return false;
+        if(currentNumber < 10){
+            if(currentNumber == 1 || currentNumber == 7)
+                return true;
+            else
+                return false;
+        }
+        return isLucky(currentNumber);
+    }
+    static int isLuckyNumber(int n) {
+        n++;
+        while(true){
+            if(isLucky(n)){
+                return n;
+            }
+            n++;
+        }
+    }
+}

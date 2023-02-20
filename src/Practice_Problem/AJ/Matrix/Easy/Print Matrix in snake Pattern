@@ -1,0 +1,44 @@
+/*
+Print Matrix in snake Pattern
+https://course.acciojob.com/idle?question=5fea6a73-8dfe-494a-888c-9553938afaf5
+ */
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    void printSnakePattern(int [][]mat, int n){
+        // Variables:
+        int top = 0;
+
+        // Iteration
+        while (top < n){
+            int left = 0;
+            int right = n-1;
+            // Left => Right:
+            while(top % 2 == 0 && left <= right){
+                System.out.print(mat[top][left++]+ " ");
+            }
+            // Right => Left:
+            while (top % 2 != 0 && right >= left){
+                System.out.print(mat[top][right--]+ " ");
+            }
+
+            top++;
+        }
+    }
+}
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int a[][] = new int[n][n];
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                a[i][j] = input.nextInt();
+            }
+        }
+        Solution Obj = new Solution();
+        Obj.printSnakePattern(a,n);
+    }
+}
