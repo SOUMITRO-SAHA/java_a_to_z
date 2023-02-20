@@ -1,0 +1,23 @@
+/*
+Reverse A Number
+https://course.acciojob.com/idle?question=196ba993-897e-47fc-ad51-3d0b379e23e9
+*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        while(n != 0){
+            int lastDigit = n % 10;
+            System.out.println(lastDigit);
+            n /= 10;
+        }
+    }
+}

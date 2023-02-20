@@ -1,0 +1,42 @@
+/*
+Climbing Stairs
+https://course.acciojob.com/idle?question=339b28b9-971f-4316-aede-7b9e0f20934f
+ */
+import java.util.*;
+import static java.lang.Math.ceil;
+
+class Accio {
+    static int c = 0;
+    public int ClimbingStairs(int n) {
+        // Calling countWaysToClimb()
+        countWaysToClimb(n, 0);
+        return c;
+
+    }
+
+    private void countWaysToClimb(int n, int i) {
+        // Base Case:
+        if (i == n) {
+            c++;
+            return;
+        }
+
+        // Recursive Call:
+        //Left call for Only 1 step:
+        countWaysToClimb(n, i+1);
+
+        // Right Call for 2 Steps:
+        if (n-i >= 2){
+            countWaysToClimb(n,i+2);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        Accio Obj = new Accio();
+        System.out.println(Obj.ClimbingStairs(n));
+    }
+}

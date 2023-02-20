@@ -1,0 +1,24 @@
+/*
+Fourbinaci Games
+https://course.acciojob.com/idle?question=c8f615fa-39c6-43e8-8b66-79bd84811e79
+ */
+import java.util.*;
+
+class Solution {
+
+    public static int fourbinacci(int n) {
+        //Edge Case:
+        if(n <= 4)return 1;
+        return fourbinacci(n-4)+fourbinacci(n-3)+fourbinacci(n-2)+fourbinacci(n-1);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N= sc.nextInt();
+        Solution Obj = new Solution();
+        System.out.println(Obj.fourbinacci(N));
+
+    }
+}

@@ -1,0 +1,71 @@
+/*
+Set Matrix Zeroes
+https://course.acciojob.com/idle?question=5ef5810d-7449-4222-8e3b-eca8bdad41b4
+ */
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int[][] arr = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+        Solution.setMatrixZeroes(arr);
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+class Solution {
+    static void setMatrixZeroes(int[][] matrix) {
+        int n = matrix.length;
+        int m = matrix[0].length;
+        //HashMap for the Column:
+        HashMap<Integer,Boolean> colHash = new HashMap<>();
+        // Iterating the Matrix:
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if(matrix[i][j] == 0){
+                    int row = i;
+                    int col = j;
+                    if(!colHash.containsKey(col)){
+                        // Update the Row => Here the Row is Constant.
+                        updateRow(matrix,row,m);
+                        // Update the Col
+                        updateCol(matrix,col,n);
+                        // Populate the HashTable:
+                        colHash.put(col, true);
+                        // Braking
+                        break;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    private static void updateCol(int[][] matrix, int col, int rowLength) {
+        // Here, the Col is Constant:
+        int row = 0;
+        while (row < rowLength){
+            matrix[row++][col] = 0;
+        }
+    }
+
+    private static void updateRow(int[][] matrix, int row, int colLength) {
+        // Here Row is Constant:
+        int col = 0;
+        while (col < colLength){
+            matrix[row][col++] = 0;
+        }
+    }
+}

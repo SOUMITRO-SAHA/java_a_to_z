@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class Main
+{
+    // Sum of All Odd Lengths Subarray:
+    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        hollowRhombus(n);
+        int []arr = {7,1,5,3,6,4};
+        minMaxHeight(arr);
+    }
+    static void hollowRhombus(int n){
+        for (int i = 0; i < n; i++) {
+            // Space:
+            for (int j = 0; j < -i+(n-1); j++) {
+                System.out.print(" ");
+            }
+
+            // Start:
+            if(i == 0 || i == n-1){ // When Fist Line and Last Line
+                for (int j = 0; j < n; j++) {
+                    System.out.print("*");
+                }
+            }
+            else{
+                for (int j = 0; j < n; j++) {
+                    if(j == 0 || j == n-1){
+                        System.out.print("*");
+                    }
+                    else{
+                        System.out.print(" ");
+                    }
+                }
+            }
+            System.out.println(); // Line Break:
+        }
+    }
+
+    static void minMaxHeight(int []arr){
+        // Soring the array:
+        Arrays.sort(arr);
+        // Variables:
+        int minDiff = Math.abs(arr[1] - arr[0]);
+        int maxDiff = Math.abs(arr[arr.length -1] - arr[0]);
+        for (int i = 0; i < arr.length -1; i++) {
+            int currentDiff = Math.abs(arr[i+1] - arr[i]);
+            minDiff = Math.min(minDiff, currentDiff);
+        }
+
+        // Output:
+        System.out.println(minDiff +" "+ maxDiff);
+    }
+}
+

@@ -1,0 +1,65 @@
+// Method -1:
+static int isCyclicRotation(String p, String q) {
+    char targetChar = q.charAt(0);
+    int i = 0;
+    while(i < p.length()){
+        if(p.charAt(i) == targetChar){
+            StringBuilder sb = new StringBuilder();
+
+            // Separating the String:
+            String firstPart = p.substring(0, i);
+            String secondPart = p.substring(i, p.length());
+
+            // Appending:
+            sb.append(secondPart);
+            sb.append(firstPart);
+
+            // Checking
+            if(q.equals(sb.toString())){
+                return 1;
+            }
+        }
+        i++;
+    }
+
+    // If there is not match:
+    return 0;
+}
+
+===================
+/*
+Check If One String Is A Rotation Of Another String
+https://course.acciojob.com/idle?question=1816763e-29b5-4de9-8b63-422a7f8df7d7
+ */
+import java.util.*;
+
+class Solution {
+    static int isCyclicRotation(String p, String q) {
+        // We have to use Queue in here,: [Tomorrow]
+        StringBuilder sb = new StringBuilder(p);
+        char targetChar = q.charAt(0);
+        int i = 0;
+        while(i < p.length()){
+            if(p.charAt(i) == targetChar){
+
+            }
+            else{
+
+            }
+            i++;
+        }
+
+        // If there is not match:
+        return 0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        String p = sc.next();
+        String q = sc.next();
+        int ans = Solution.isCyclicRotation(p, q);
+        System.out.println(ans);
+    }
+}

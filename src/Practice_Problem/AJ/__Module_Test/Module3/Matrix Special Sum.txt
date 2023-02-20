@@ -1,0 +1,46 @@
+import java.util.*;
+
+class Solution {
+    public int[][] matrixBlockSum(int[][] mat, int k) {
+
+        int[][] res = new int[mat.length][mat[0].length];
+
+        for (int i = 0; i < mat.length; i++){
+            for (int j = 0; j < mat[0].length; j++){
+                res[i][j] = specialSum(mat, k, i, j);
+            }
+        }
+
+        return res;
+    }
+
+    int specialSum(int[][] mat, int k, int i, int j) {
+        int sum = 0;
+
+        for (int row = i - k; row <= i + k; row++){
+            if (row >= 0 && row < mat.length) {
+                for (int col = j - k; col <= j + k; col++){
+                    if (col >= 0 && col < mat[0].length) {
+                        sum += mat[row][col];
+                    }
+                }
+            }
+        }
+
+        return sum;
+    }
+
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		int [][]mat = {{1,2,3},{4,5,6},{7,8,9}};
+
+		Solution sol = new Solution();
+		int [][]res = sol.matrixBlockSum(mat, 1);
+
+		for(int i=0; i<mat.length; i++)
+    	    System.out.println(Arrays.toString(res[i]));
+	}
+}

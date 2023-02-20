@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Main
+{
+    // Sum of All Odd Lengths Subarray:
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        //Array
+        int []arr = new int[n];
+        // Taking Input for the Array:
+        for(int i=0; i<n; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        // Calling the oddLength() function:
+        System.out.println(oddLength(arr,n));
+    }
+    static int oddLength(int []arr, int n){
+        int sum = 0;
+        for(int i = 0; i < n; i++){// Starting Index:
+            for (int j = i; j < n ;j++ ){ // Ending Index:
+                int len = j - i +1;
+                if(len % 2 != 0){
+                    for(int k=i; k <= j; k++){
+                        sum += arr[k];
+                    }
+                }
+            }
+        }
+
+        return sum;
+    }
+}

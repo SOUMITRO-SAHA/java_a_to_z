@@ -1,0 +1,32 @@
+/*
+Print Stair Path
+https://course.acciojob.com/idle?question=c6abdf5c-6981-4f50-8908-0ce691ee6851
+ */
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    static void printStairPaths(int n,String pathSoFar) {
+        // Base Case
+        if (n == 0) {
+            System.out.println(pathSoFar);
+        }
+
+        // Recursive Call:
+        if(n >= 1){
+            printStairPaths(n - 1, pathSoFar + "1");
+        }
+        if (n >= 2) {
+            printStairPaths(n-2, pathSoFar+"2");
+        }
+        if (n >= 3) {
+            printStairPaths(n - 3, pathSoFar + "3");
+        }
+    }
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        n = sc.nextInt();
+        printStairPaths(n,"");
+    }
+}

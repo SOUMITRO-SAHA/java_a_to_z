@@ -1,0 +1,49 @@
+import java.util.*;
+import java.lang.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int k=sc.nextInt();
+
+        String str1 = sc.next();
+        String str2 = sc.next();
+
+        Solution ob = new Solution();
+
+        if (ob.areKAnagrams(str1, str2, k) == true)
+            System.out.println("1");
+        else
+            System.out.println("0");
+    }
+}
+
+class Solution {
+    boolean areKAnagrams(String s1, String s2, int k) {
+        HashMap<Character, Integer> h = new HashMap<>();
+        // Taking inputs into the HashTable:
+        for (int i = 0; i < s1.length(); i++) {
+            char currentChar = s1.charAt(i);
+            if(h.containsKey(currentChar)){
+                h.put(currentChar, h.get(currentChar) + 1);
+            }
+            else{
+                h.put(currentChar, 1);
+            }
+        }
+
+        // Checking in the Second String:
+        int count = 0;
+        for (int i = 0; i < s2.length(); i++) {
+            char targetChar = s2.charAt(i);
+            if (!h.containsKey(targetChar)){ // If not present then True
+                count++;
+            }
+        }
+
+        // Returning based on the Count:
+        if(count > k || s1.length() != s2.length())
+            return false;
+        return true;
+    }
+}

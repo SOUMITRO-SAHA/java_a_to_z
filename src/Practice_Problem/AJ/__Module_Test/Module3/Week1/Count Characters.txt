@@ -1,0 +1,35 @@
+/*
+Count Characters
+https://course.acciojob.com/idle?question=7987a5e6-6869-4bb9-9e25-1cc87e54dc02
+
+=> Print space-separated count of uppercase, lowercase, and digits in a single line.
+ */
+import java.util.Scanner;
+
+class Accio {
+    public static void countCharacter(String str)
+    {
+        int upperCase = 0;
+        int lowerCase = 0;
+        int digits = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            char currentChar = str.charAt(i);
+            if(currentChar >= 'A' && currentChar <= 'Z') upperCase++;
+            else if (currentChar >= 'a' && currentChar <= 'z') lowerCase++;
+            else if(currentChar >= '0' &&  currentChar <= '9')digits++;
+        }
+
+        // Output:
+        System.out.println(upperCase +" "+lowerCase+" "+digits);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        Accio Obj = new Accio();
+        Obj.countCharacter(str);
+    }
+}

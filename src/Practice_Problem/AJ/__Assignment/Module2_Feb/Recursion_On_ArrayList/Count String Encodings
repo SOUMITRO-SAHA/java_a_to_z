@@ -1,0 +1,48 @@
+/*
+Count String Encodings
+https://course.acciojob.com/idle?question=d87d1a01-6956-4b27-a521-0499605191b1
+ */
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        sc.close();
+        System.out.println(countEncodings(str));
+    }
+
+    public static int countEncodings(String str) {
+        ArrayList<String> ans = new ArrayList<>();
+        stringEncoding("",str, ans);
+        int count = ans.size();
+        return count;
+    }
+
+    public static void stringEncoding(String p, String up, ArrayList<String> ans) {
+        // Base Case:
+        if (up.length() == 0) {
+            ans.add(p);
+            return;
+        }
+        if (up.charAt(0) == '0') {
+            return;
+        }
+
+        // Recursive Call:
+        // Left Call:
+        char ch = up.charAt(0);
+        char alp = (char) (ch - '0' - 1 + 'a');
+        stringEncoding(p+alp, up.substring(1), ans);
+        // Right Call:
+        if (up.length() >= 2) {
+            int num = Integer.parseInt(up.substring(0, 2));
+            // Check if num >=26
+            if (num >= 1 && num <= 26) {
+                char alph = (char) (num - 1 + 'a');
+                stringEncoding(p+alph, up.substring(2), ans);
+            }
+        }
+    }
+}

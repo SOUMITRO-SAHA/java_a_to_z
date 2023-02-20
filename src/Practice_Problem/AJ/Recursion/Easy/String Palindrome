@@ -1,0 +1,35 @@
+/*
+String Palindrome
+https://course.acciojob.com/idle?question=b63a6d2a-0420-4244-a101-07df0a98872f
+ */
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+
+    static boolean isPalindrome(String str){
+        // Variables
+        int startIdx = 0;
+        int endIdx = str.length() -1;
+
+        // Base Case:
+        if(str.length() == 0 || startIdx == endIdx){
+            return true;
+        }
+        if(str.charAt(startIdx) != str.charAt(endIdx)){
+            return false;
+        }
+
+        // Recursive Call:
+        return isPalindrome(str.substring(1,endIdx));
+    }
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str= sc.nextLine();
+        boolean result=isPalindrome(str);
+        if(result)
+            System.out.println("YES");
+        else
+            System.out.println("NO");
+    }
+}

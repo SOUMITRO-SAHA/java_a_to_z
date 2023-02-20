@@ -1,0 +1,37 @@
+/*
+Count My Makers
+https://course.acciojob.com/idle?question=c7aaea1c-1145-49dd-95db-aedeebdf0b15
+*/
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+
+        // Condition:
+        correctAns(n,a,b,c,d);
+
+    }
+    static void correctAns(int n, int a, int b, int c, int d){
+        if(a == n || b == n || c == n || d == n){
+            System.out.println(1);
+            return;
+        }else if (a * b == n || a * c == n || a * d == n || b * c == n || b * d == n || c * d == n ) {
+            System.out.println(2);
+            return;
+        } else if (a * b * c == n || a * b * d == n || a * c * d == n || b * c * d == n) {
+            System.out.println(3);
+            return;
+        } else{
+            System.out.println(4);
+            return;
+        }
+    }
+}

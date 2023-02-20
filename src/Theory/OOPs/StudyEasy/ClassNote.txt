@@ -1,0 +1,68 @@
+[Video-1] :
+1. What does OOPs is so favours?
+= We can depict the real life scenario using programming using object-oriented programming.
+e.g. - Keyboard, Monitor,
+- Object has properties and
+- Objects has functionalities.
+
+In other words we can also say that:
+Object has states and
+Object has behavior
+
+[Video-2] :
+2. Properties of a Class
+We usually make the properties of a class private and the behaviors of the class is use to
+access the properties.
+
+In Car i.e. door, engine, driver, speed are the properties.
+
+-----------------------------------------------------------
+public class Car {
+    private String doors;
+    private String engine;
+    private String driver;
+    private int speed;
+}
+-----------------------------------------------------------
+
+3. What is getters and setters?
+=> The return type for the setters would be `void`.
+Because, we are setting some information.
+
+-----------------------------------------------------------
+package Theory.OOPs.StudyEasy;
+
+public class Car {
+    private String doors;
+    private String engine;
+    private String driver;
+    private int speed;
+
+    // Setters:
+    public void setSpeed(int speed){
+        this.speed = speed;
+    }
+
+    // Getters:
+    public int getSpeed(){
+        return speed;
+    }
+}
+-----------------------------------------------------------
+[Video-3] :
+4. How to create getter and Setters automatically ?
+Step-1: Right Click on any empty space inside the class
+Step-2: Select the option generate/ or, [Alt + Ins]
+Step-3: Select the provided options.
+
+[Video-16] :
+5. What is composition?
+Let's just say we are coding a program which depicts a laptop. Now what is a laptop?
+Laptop is a composition which consists of multiple components which work together as
+a team to solve a purpose.
+
+6. What are components?
+In a composition like laptop, the components could be a screen, processor, ram, Hard Drive,
+Keyboard etc..
+
+[Video-5] :

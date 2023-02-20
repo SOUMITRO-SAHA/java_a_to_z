@@ -1,0 +1,45 @@
+/*
+Zero Max
+https://course.acciojob.com/idle?question=29bd8c9d-5e18-4f88-867c-d96350d9b801
+ */
+import java.util.*;
+
+class Solution {
+    public void zeroMax(int n, int[] arr) {
+        for (int i = 0; i < n; i++) {
+            if(arr[i] == 0){
+                int maxElementToTheRight = maxElInRight(arr,i, n);
+                arr[i] = maxElementToTheRight;
+            }
+        }
+    }
+
+    private int maxElInRight(int[] arr, int st, int end) {
+        int maxEl = 0;
+        while (st < end){
+            int currentElement = arr[st];
+            if(currentElement % 2 == 1)
+                maxEl = Math.max(maxEl, currentElement);
+            st++;
+        }
+
+        return maxEl;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scn.nextInt();
+        }
+        Solution Obj = new Solution();
+        scn.close();
+        Obj.zeroMax(n, arr);
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}

@@ -1,0 +1,33 @@
+/*
+Print all subsequences of a string
+https://course.acciojob.com/idle?question=47e066fc-64ac-4ce9-ab5f-3a3d6d522765
+ */
+import java.util.*;
+import java.util.Scanner;
+
+public class Main{
+    static void printSubsequence(String s){
+        // Calling
+        func(s,"");
+    }
+
+    static void func(String ques, String ans){
+        //Base Case:
+        if (ques.length() == 0) {
+            System.out.print(ans+" ");
+            return;
+        }
+
+        char startingChar = ques.charAt(0);
+        // Taking the Starting char:
+        func(ques.substring(1), ans+startingChar);
+
+        // Skipping the Starting char:
+        func(ques.substring(1),ans);
+    }
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        printSubsequence(s);
+    }
+}

@@ -1,0 +1,49 @@
+/*
+Get Maze Paths
+https://course.acciojob.com/idle?question=58bc9224-e806-42d4-a9bf-9f0beff3092a
+ */
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static ArrayList<String> allPossiblePaths(int row, int col) {
+        ArrayList<String> paths = new ArrayList<>();
+        allPossiblePathsList(row, col,"",1,1, paths);
+        return paths;
+    }
+    public static void allPossiblePathsList(int row, int col, String psf, int cr, int cc, ArrayList<String> ans){
+        // Base Case:
+        if (cr == row && cc == col) {
+            ans.add(psf);
+            return;
+        }
+
+        // Recursive Call:
+        // Diagonal Jump
+        for (int i = 1; i <= Math.min(2, Math.min(row-cr, col-cc)); i++) {
+            allPossiblePathsList(row, col, psf+'d'+i, cr+i, cc+i, ans);
+        }
+
+        // Horizontal Jump
+        for (int i = 1; i <= Math.min(2, col-cc); i++) {
+            allPossiblePathsList(row, col, psf+'h'+i, cr, cc+i, ans);
+        }
+
+        // Vertical Jump
+        for (int i = 1; i <= Math.min(2, row-cr); i++) {
+            allPossiblePathsList(row, col, psf+'v'+i, cr+i, cc, ans);
+        }
+    }
+
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int m = input.nextInt();
+        ArrayList<String> result = allPossiblePaths(n, m);
+        Collections.sort(result);
+        for (String str : result) {
+            System.out.println(str);
+        }
+
+    }
+}

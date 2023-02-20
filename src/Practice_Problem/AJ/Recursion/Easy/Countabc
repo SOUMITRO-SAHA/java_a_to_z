@@ -1,0 +1,28 @@
+/*
+Countabc
+https://course.acciojob.com/idle?question=8dff7ba2-333c-4674-90b7-d39b0bc7a070
+*/
+import java.util.*;
+
+public class Main {
+    static int CountABC(String str, int count) {
+        //Base Case:
+        if(str.length() == 0){
+            return count;
+        }
+
+        // Condition for Count:
+        if (str.startsWith("abc") || str.startsWith("aba")) {
+            return CountABC(str.substring(3), count+1);
+        }
+
+        return CountABC(str.substring(1),count);
+
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(CountABC(s, 0));
+
+    }
+}
