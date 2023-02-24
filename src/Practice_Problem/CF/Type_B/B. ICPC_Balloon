@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t > 0) {
+            int n = sc.nextInt();
+            String str = sc.next();
+            // Calling the Required Function:
+            fun(str,n); // void function:
+            t--;
+        }
+    }
+
+    private static void fun(String s, int n) {
+        HashMap<Character, Integer> hash = new HashMap<>();
+        char[] ch = s.toCharArray();
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            char currentChar = ch[i];
+
+            // Taking into the HashMap:
+            if (hash.containsKey(currentChar)) {
+                hash.put(currentChar, hash.get(currentChar)+1);
+                sum += 1;
+            }
+            else{
+                hash.put(currentChar, 1);
+                sum += 2;
+            }
+        }
+        // Printing the Result:
+        System.out.println(sum);
+    }
+}
+
+/*
+1
+3
+ABA
+*/

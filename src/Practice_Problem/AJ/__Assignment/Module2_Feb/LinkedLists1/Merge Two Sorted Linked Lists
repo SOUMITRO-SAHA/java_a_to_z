@@ -1,0 +1,105 @@
+/*
+Merge Two Sorted Linked Lists
+https://course.acciojob.com/idle?question=0a80f2b0-70b8-4f71-85c6-761b1313dae5
+ */
+import java.io.*;
+import java.util.*;
+
+class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data = data;
+        next = null;
+    }
+}
+class LinkedList{
+    Node head;
+    void add(int data ){
+        Node new_node = new Node(data);
+        if(head == null){
+            head = new_node;
+            return;
+        }
+        Node current = head;
+        while(current.next !=null){
+            current = current.next;
+        }
+        current.next = new_node;
+    }
+}
+
+class Solution {
+    static Node merge(Node x, Node y){
+        Node first, second, last, head;
+        first = x;
+        second = y;
+
+        // First, Checking for the smaller Node of the Two given LL:
+        if(first.data <= second.data){
+            head = first;
+            last = first;
+            first = first.next;
+        }
+        else {
+            head = second;
+            last = second;
+            second = second.next;
+        }
+
+        // Second, checking each node one by one and merge to the head node:
+        while (first != null && second != null) {
+            // checking for the smaller value:
+            if (first.data <= second.data) {
+                // Linking the last node to the second node:
+                last.next = first;
+                // Increase the last pointer
+                last = first;
+                // Increase the first pointer:
+                first = first.next;
+            }
+            else {
+                // Linking the last node to the second node:
+                last.next = second;
+                // Increase the last pointer
+                last = second;
+                // Increase the second pointer:
+                second = second.next;
+            }
+        }
+
+        // Third, If still any one of the Linked list is left:
+        if (first != null) {
+            last.next = first;
+        } else if (second != null) {
+            last.next = second;
+        }
+
+        // Returning the head:
+        return head;
+    }
+}
+
+public class Main {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        LinkedList l1= new LinkedList();
+        for(int i=0;i<n;i++){
+            l1.add(sc.nextInt());
+        }
+        int m = sc.nextInt();
+        LinkedList l2 = new LinkedList();
+        for(int i=0;i<m;i++){
+            l2.add(sc.nextInt());
+        }
+
+        Solution Ob = new Solution();
+        Node head = Ob.merge(l1.head, l2.head);
+        while(head != null){
+            System.out.print(head.data + " ");
+            head = head.next;
+        }
+    }
+}

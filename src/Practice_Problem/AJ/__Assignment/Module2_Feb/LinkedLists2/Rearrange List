@@ -1,0 +1,119 @@
+/*
+Rearrange List
+https://course.acciojob.com/idle?question=78bdc5f3-b1ba-4063-a99b-38413ac59785
+ */
+import java.util.*;
+import java.lang.*;
+
+class Node
+{
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+class LinkedList
+{
+    Node head;
+    Node tail;
+    public void addToTheLast(Node node)
+    {
+        // If there is no node present:
+        if (head == null)
+        {
+            head = node;
+        }
+        else{
+            tail.next = node;
+            node.prev = tail;
+        }
+        tail = node;
+    }
+    void printList(Node node)
+    {
+        Node temp = node;
+        if (node == tail) {
+            while (temp != null) {
+                System.out.print(temp.data+" ");
+                temp = temp.prev;
+            }
+        }
+        else {
+            while (temp != null)
+            {
+                System.out.print(temp.data+" ");
+                temp = temp.next;
+            }
+        }
+        System.out.println();
+    }
+}
+
+class Main{
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+
+        while(t-- > 0){
+            int n = sc.nextInt();
+            LinkedList ll= new LinkedList();
+            int a1 = sc.nextInt();
+            Node head= new Node(a1);
+            ll.addToTheLast(head);
+            for (int i = 1; i < n; i++)
+            {
+                int a = sc.nextInt();
+                ll.addToTheLast(new Node(a));
+            }
+            Node node = Solution.rearrange(ll.head, ll.tail);
+            ll.printList(node);
+            System.out.println();
+        }
+    }
+}
+
+class Solution{
+
+    public static Node rearrange(Node head, Node tail){
+        //Write code here
+        Node dummy = new Node(-1);
+        Node last = dummy;
+        int i = 0;
+        while (head != null) {
+            // Even Case:
+            if (i % 2 == 0) {
+                last.next = head;
+                last = head;
+                head = head.next;
+
+                // Updating the References:
+                if (head != null && head.prev != null) {
+                    head.prev = null;
+                }
+                if (last.next != null) {
+                    last.next = null;
+                }
+            }
+            // Odd Case:
+            else if(head != tail && tail.prev != null){
+                last.next = tail;
+                last = tail;
+                tail = tail.prev;
+                // Updating the References:
+                last.prev = null;
+                if(tail.next != null)
+                    tail.next = null;
+            }
+            i++;
+        }
+
+        return dummy.next;
+    }
+}
+

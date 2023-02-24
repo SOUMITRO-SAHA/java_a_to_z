@@ -1,0 +1,101 @@
+/*
+Delete Node in Linked List
+https://course.acciojob.com/idle?question=a23ee5b7-7b2e-4f66-9736-f7c2904e2158
+ */
+import java.util.*;
+
+class Node
+{
+    int data;
+    Node next;
+
+    Node(int d)
+    {
+        data = d;
+        next = null;
+    }
+}
+
+class Main
+{
+    Node head;
+    void printList()
+    {
+        Node temp = head;
+        while (temp != null)
+        {
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+    public void addToTheLast(Node node)
+    {
+        if (head == null)
+        {
+            head = node;
+        } else
+        {
+            Node temp = head;
+            while (temp.next != null)
+                temp = temp.next;
+
+            temp.next = node;
+        }
+    }
+
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        Main llist = new Main();
+        int a1 = sc.nextInt();
+        Node head = new Node(a1);
+        llist.addToTheLast(head);
+        for (int i = 1; i < n; i++)
+        {
+            int a = sc.nextInt();
+            llist.addToTheLast(new Node(a));
+        }
+        int x = sc.nextInt();
+        Node node = head;
+        while(node!=null)
+        {
+            if(node.data == x)
+                break;
+            node = node.next;
+        }
+
+        Solution g = new Solution();
+        g.deleteNode(llist,node);
+        llist.printList();
+    }
+}
+
+class Solution
+{
+    void deleteNode(Main ll, Node targetNode)
+    {
+        Node head = ll.head;
+        Node temp = head;
+
+        // Edge Case
+        if (targetNode == head ) {
+            ll.head = head.next;
+            return;
+        }
+
+        // Get to the Previous node of the target node:
+        while (temp.next != null) {
+            if (temp.next == targetNode) {
+                break;
+            }
+            temp = temp.next; // To reach the previous node.
+        }
+
+        // Deleting the Target Node;
+        temp.next = targetNode.next;
+        targetNode.next = null;
+    }
+}

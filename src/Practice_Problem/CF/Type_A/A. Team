@@ -1,0 +1,55 @@
+/*
+Template for Single Test Case for Matrix:
+Question Name: A. Team
+Question Link: https://codeforces.com/problemset/problem/231/A
+*/
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int m = 3;
+        int[][] matrix = new int[n][m];
+        // Taking Input for the Matrix:
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        /////////////////////////////////
+        // Change the line below:
+//        fun(matrix,n); // void function: for square matrix
+        fun(matrix,n,m); // void function: for Different Row and Column
+
+        // Change the line above:
+        /////////////////////////////////
+    }
+    // For Square Matrix:
+//    private static void fun(int [][]mat, int n) {
+//        // Your Code Here
+//    }
+
+
+    // For Rectangular Matrix:
+    private static void fun(int [][]mat, int n, int m) {
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            int tempCount = 0;
+            for (int j = 0; j < m; j++) {
+                if (mat[i][j] == 1) {
+                    tempCount++;
+                }
+            }
+
+            // Condition for Count:
+            if (tempCount >= 2) {
+                count++;
+            }
+        }
+
+        // Printing:
+        System.out.println(count);
+    }
+}

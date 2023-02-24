@@ -1,0 +1,40 @@
+/*
+Template for Single Test Case:
+Question Name: A. Next Round
+Question Link: https://codeforces.com/problemset/problem/158/A
+*/
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        int[] arr = new int[n];
+        // Taking Array Input:
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        /////////////////////////////////
+        // Change the line below:
+        fun(arr,k, n); // void function:
+
+        // Change the line above:
+        /////////////////////////////////
+    }
+
+    private static void fun(int []arr, int k, int n) {
+        int count = 0;
+        int targetScore = arr[k-1];
+        // Iterating over the array:
+        for (int i = 0; i < n; i++) {
+            if (arr[i] >= targetScore && arr[i] != 0) {
+                count++;
+            }
+        }
+        // Print
+        System.out.println(count);
+    }
+}

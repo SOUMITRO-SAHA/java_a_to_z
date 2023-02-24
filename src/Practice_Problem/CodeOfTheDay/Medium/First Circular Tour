@@ -1,0 +1,83 @@
+// =============================== [Solution File] ======================================= //
+
+import java.util.ArrayList;
+
+public class Solution {
+    public static int firstCircularTour(ArrayList<Integer> petrol,
+                                        ArrayList<Integer> distance, int n){
+        // First, Calculate the Petrol about
+        // Then check whether it is possible to travel to the next petrol pump.
+        // Third, If possible then reduce the distance
+        int ans = -1;
+        for (int i = 0; i < n; i++) {
+            int sum = 0;
+            boolean flag = false;
+            int start = i, end = -1;
+            while(start != end){
+                // Check if Possible for travel to the next Station.
+                if(!flag && petrol.get(start) >= distance.get(start)){
+                    flag = true;
+                    end = start;
+                    i = start;
+                }
+
+                // After finding the Target Station.
+                if(flag){
+                    int currentPetrol = petrol.get(start);
+                    int distanceToTravel = distance.get(start);
+                    sum += (currentPetrol - distanceToTravel);
+
+                    // Condition for Sum:
+                    if(sum < 0){
+                        break;
+                    }
+                }
+
+                // Condition for Cycle.
+                if(start < n)
+                    start++;
+                if(start == n && end != -1){
+                    start = 0;
+                }
+                else if(start == n){
+                    break;
+                }
+            }
+
+            // Checking for Sum Value:
+            if (sum >= 0) {
+                ans = end;
+                break;
+            }
+        }
+        return ans;
+    }
+}
+
+// =============================== [Driver File] ======================================= //
+
+import java.util.* ;
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t > 0) {
+            ArrayList<Integer> petrol = new ArrayList<>();
+            ArrayList<Integer> distance = new ArrayList<>();
+            int n = sc.nextInt();
+            for (int i = 0; i < n; i++) {
+                int petrolInLitter = sc.nextInt();
+                int distanceInKM = sc.nextInt();
+                petrol.add(petrolInLitter);
+                distance.add(distanceInKM);
+            }
+            // Passing to the Solution
+            System.out.println(Solution.firstCircularTour(petrol,distance,n));
+            t--;
+        }
+
+    }
+}

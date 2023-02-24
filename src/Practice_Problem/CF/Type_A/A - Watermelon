@@ -1,0 +1,30 @@
+/*
+Question Name: 	4A - Watermelon
+Question Link: https://codeforces.com/problemset/problem/4/A
+*/
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        // Change the line below:
+        /////////////////////////////////
+        fun(n); // void function:
+
+        /////////////////////////////////
+        // Change the line above:
+    }
+
+    private static void fun(int n) {
+        // Case 1: if(n%2 == even)
+        if (n % 2 == 0 && n != 2) {
+            System.out.println("YES");
+            return;
+        }
+        // Case 2: If two different weight but even division possible:
+        else{
+            System.out.println("NO");
+        }
+    }
+}

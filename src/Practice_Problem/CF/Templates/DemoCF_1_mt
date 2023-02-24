@@ -1,0 +1,29 @@
+/*
+Template for Multiple Test Cases:
+Question Name:
+Question Link:
+*/
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t > 0) {
+            int n = sc.nextInt();
+            String str = sc.next();
+            // Calling the Required Function:
+            // Change the line below:
+            /////////////////////////////////
+            fun(str,n); // void function:
+
+            /////////////////////////////////
+            // Change the line above:
+            t--;
+        }
+    }
+
+    private static void fun(String s, int n) {
+        // Your Code Here
+    }
+}

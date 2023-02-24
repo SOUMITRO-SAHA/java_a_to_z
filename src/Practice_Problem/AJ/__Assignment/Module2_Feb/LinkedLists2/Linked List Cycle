@@ -1,0 +1,109 @@
+/*
+Linked List Cycle
+https://course.acciojob.com/idle?question=130e273c-3811-43a0-95e0-2862dbd39118
+ */
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+class Node
+{
+    int data;
+    Node next;
+    Node(int d) {data = d; next = null; }
+}
+
+class LinkedList
+{
+    Node head;
+    Node tail;
+    public void addToTheLast(Node node)
+    {
+        if (head == null)
+        {
+            head = node;
+        }
+        else
+        {
+            tail.next = node;
+        }
+        tail = node;
+    }
+
+    public static void makeLoop(Node head, int x){
+        if (x == 0)
+            return;
+        Node curr = head;
+        Node last = head;
+
+        int currentPosition = 1;
+        while (currentPosition < x)
+        {
+            curr = curr.next;
+            currentPosition++;
+        }
+
+        while (last.next != null)
+            last = last.next;
+        last.next = curr;
+    }
+    void printList()
+    {
+        Node temp = head;
+        while (temp != null)
+        {
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+}
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        LinkedList ll= new LinkedList();
+        int a1=sc.nextInt();
+        Node head= new Node(a1);
+        ll.addToTheLast(head);
+        for (int i = 1; i < n; i++)
+        {
+            int a = sc.nextInt();
+            ll.addToTheLast(new Node(a));
+        }
+
+
+        int pos = sc.nextInt();
+        LinkedList.makeLoop(head, pos);
+
+        boolean a=Solution.detectLoop(head);
+
+        if(a)
+            System.out.println(1);
+        else
+            System.out.println(0);
+
+    }
+}
+
+class Solution
+{
+    //Function to remove a loop in the linked list.
+    public static boolean detectLoop(Node head){
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if (fast == slow) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}

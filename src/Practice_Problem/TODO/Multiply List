@@ -1,0 +1,90 @@
+/*
+Multiply Lists
+https://course.acciojob.com/idle?question=63357edf-db57-4f72-bf2f-9dfa416884d7
+ */
+import java.util.*;
+class Node
+{
+    int data;
+    Node next;
+    Node(int data){
+        this.data=data;
+        next=null;
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        Node head=null;
+        Node phead=null;
+        int n=sc.nextInt();
+        while(n-->0){
+            int n1=sc.nextInt();
+            if(head==null)
+                head=new Node(n1);
+            else
+                addHead(head,n1);
+        }
+        int m=sc.nextInt();
+        while(m-->0){
+            int n1=sc.nextInt();
+            if(phead==null)
+                phead=new Node(n1);
+            else{
+                addHead(phead,n1);
+            }
+        }
+        Solution g=new Solution();
+        System.out.println(g.multiplyLists(head,phead));
+    }
+
+    public static void addHead(Node node,int a) {
+        if (node == null)
+            return;
+        if(node.next==null)
+            node.next=new Node(a);
+        else
+            addHead(node.next,a);
+    }
+}
+
+class Solution{
+    public long multiplyLists(Node l1,Node l2){
+        // First Reverse the LL1
+        Node h1 = reverse(l1);
+        Node temp1 = h1;
+        // Second Reverse the LL2
+        Node h2 = reverse(l2);
+        Node temp2 = h2;
+
+        // Multiply:
+        int carry = 0;
+        int multi = 1;
+        while (temp1 != null && temp2 != null) {
+
+        }
+        /*return (firstNum * secondNum > Integer.MAX_VALUE)
+                ? ((firstNum % 1000000007) * (secondNum % 1000000007))
+                : firstNum * secondNum;*/
+    }
+
+    Node reverse(Node head) {
+        // Check
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node curr = head;
+        Node prev = null;
+        while (curr != null) {
+            Node next = curr.next;
+
+            // Updating the Current Reference:
+            curr.next = prev;
+            // Updating the Prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+}

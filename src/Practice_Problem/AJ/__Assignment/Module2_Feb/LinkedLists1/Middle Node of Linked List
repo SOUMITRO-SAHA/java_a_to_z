@@ -1,0 +1,79 @@
+/*
+Middle Node Of Linked List
+https://course.acciojob.com/idle?question=c6f18527-8007-4ca5-b928-b9fc2db5f28f
+ */
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        LinkedList lList= new LinkedList();
+        int a1=sc.nextInt();
+        Node head= new Node(a1);
+        lList.addToTheLast(head);
+        for (int i = 1; i < n; i++)
+        {
+            int a = sc.nextInt();
+            lList.addToTheLast(new Node(a));
+        }
+
+        lList.head = Solution.midpointOfLinkedList(lList.head);
+        lList.printList();
+
+    }
+}
+
+class Node
+{
+    int data;
+    Node next;
+    Node(int d) {data = d; next = null; }
+}
+
+class LinkedList
+{
+    Node head;
+    Node tail;
+    public void addToTheLast(Node node)
+    {
+        if (head == null)
+        {
+            head = node;
+        }
+        else
+        {
+            tail.next = node;
+        }
+        tail = node;
+    }
+    void printList()
+    {
+        Node temp = head;
+        while (temp != null)
+        {
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+}
+
+class Solution
+{
+    static Node midpointOfLinkedList(Node head)
+    {
+        Node front = head;
+        Node back = head;
+
+        // Iterating the front by 2 * back:
+        while(front != null && front.next != null){
+            front = front.next.next;
+            back = back.next;
+        }
+
+        return back;
+    }
+
+}

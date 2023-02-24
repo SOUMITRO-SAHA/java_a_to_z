@@ -4,107 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="recursion problem started">
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Basic/Max Element.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Basic/Maximum Distance" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Basic/Print Numbers Divisible By 3,5 And By Both.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Basic/Reverse A Number.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Basic/Round up the result of integer division.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Basic/Two Sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Basic/Zero Max.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/KAnagram.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Matrix/Easy/Find Palindrome in Matrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Matrix/Easy/Matrix Diagonal Product" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Matrix/Easy/Print Matrix in snake Pattern" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Matrix/Easy/Search element in a sorted matrix.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Matrix/Easy/Set Matrix Zeroes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Easy/Count X in a string" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Easy/Countabc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Easy/Optimized power calculation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Easy/Print Stair Path" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Easy/String Palindrome" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Easy/changePi.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Hard/Keypad combination" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Medium/Permutation Printing" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/Recursion/Medium/Print all subsequences of a string" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/String/Check if One String Is A rotation of Another String" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/String/Easy/MERGE TWO STRINGS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Climbing Stairs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Count Maze Path" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Count String Encodings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Get Maze Paths" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Get Maze Paths_(diagonal)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Get Stair Paths" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Get Subsequence" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Maze Problem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Number of ways to form Natural Number" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/Old Phone Keypad" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_ArrayList/aMaze paths" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/Recursion_On_String_And_2D_Arrays/Count aMaze Paths for Every Direction" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module1/sum_of_all_odd_length_subarrays.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/HollowRhombus.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/Matrix Special Sum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/MinMaxHeight.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/Queen's_Diamond.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/Week1/Alice and Houses.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/Week1/Count Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/Week1/Fourbinaci.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/Week2/Count My Marks.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Module_Test/Module3/Week2/Lucky Number" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Weekly_Contest/Feb_2023/W1_Feb/Catching Up" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Weekly_Contest/Feb_2023/W1_Feb/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/string Encoding" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/LeetCode/17. letter Combination" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/LeetCode/Valid Palindrome.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/LeetCode_Setup.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/TODO/Count aMaze Paths for Every Direction" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/TODO/Is_Power_Of_Two" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/TODO/Number of ways to form Natural Number" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/PizzaProject/DeluxePizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/PizzaProject/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/PizzaProject/Pizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Doubly_LL/DLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Doubly_LL/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Different_Package/Different_Package_NonSubClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Different_Package/Different_Package_SubClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Encapsulation/Encapsulate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Encapsulation/private_class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Encapsulation/protected_class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Encapsulation/public_class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Module2_Feb/ComplexNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Module2_Feb/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Module2_Feb/Wrapper_Class/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/StudyEasy/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/StudyEasy/ClassNote.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/StudyEasy/Lecture1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/Udemy/Inheritance/ClassNotes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/Udemy/Inheritance/Lecture1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/YouTube/Custom_DS/CustomArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/YouTube/Custom_DS/CustomGenericArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/OOPs/YouTube/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/Class-Notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q1_Removing_all_X.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q3_Print_all_SubSets_using_iteration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Topic_1_Subset_SubSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L7_Permutaion_on_Recursion/Q1_Print_all_Permutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Maze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q1_Paths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q2_Path_Count.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q3_Diagonal_Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q4_Maze_With_Obstacles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/Lecture3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/Lecture4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Recursion/Lecture5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sorting/BubbleSort.java" afterDir="false" />
+    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic">
+      <change afterPath="$PROJECT_DIR$/src/Input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Delete Node in Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Delete a Node" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Insert node at a specific position in a Linked-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Merge Two Sorted Linked Lists" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Middle Node of Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Print in Reverse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Remove Nth Node from End of List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Add two numbers represented by linked lists" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Linked List Cycle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Linked List Cycle 2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Middle Node of Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Multiply Lists" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Palindromic Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Rearrange List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Subtract Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Partitioning a Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Templates/DemoCF_1_mt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Templates/DemoCF_2_st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Templates/DemoCF_3_matrix_st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Templates/DemoCF_4_Array_st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A - Watermelon" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A. Domino piling" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A. Next Round" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A. Team" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A. Way Too Long Words" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_B/B. ICPC_Balloon" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CodeOfTheDay/Medium/First Circular Tour" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/TODO/Multiply List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice_Problem/AJ/CompressedString.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/String/Easy/CompressedString.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/OOPs/AccioJob/Class_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestClass.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,12 +83,21 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\CF\Type_B" />
+      <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\CF\Templates" />
       <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\AJ\Recursion\Easy" />
       <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\AJ\String\Easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Projects.PizzaProject.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Java_A_to_Z" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_A_to_Z" />
       <method v="2">
@@ -186,19 +130,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Theory.OOPs.AccioJob.Module2_Feb.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.OOPs.AccioJob.Module2_Feb.Main" />
-      <module name="Java_A_to_Z" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Theory.OOPs.AccioJob.Module2_Feb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Theory.OOPs.YouTube.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Theory.OOPs.YouTube.Main" />
       <module name="Java_A_to_Z" />
@@ -214,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Projects.PizzaProject.Main" />
         <item itemvalue="Application.Theory.OOPs.YouTube.Main" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Theory.OOPs.AccioJob.Module2_Feb.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -231,6 +162,14 @@
       <option name="presentableId" value="Default" />
       <updated>1675103849567</updated>
     </task>
+    <task id="LOCAL-00001" summary="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic">
+      <created>1676880148856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676880148856</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +191,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -290,6 +231,12 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Node" memberName="next" />
+        <PinnedItemInfo parentTag="Node" memberName="data" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Java_A_to_Z$Main.ic" NAME="Main Coverage Results" MODIFIED="1675262922819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

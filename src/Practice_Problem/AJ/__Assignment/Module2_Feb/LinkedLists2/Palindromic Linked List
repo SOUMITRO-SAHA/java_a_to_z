@@ -1,0 +1,89 @@
+/*
+Palindrome Linked List:
+https://course.acciojob.com/idle?question=4d529a8f-2016-4c69-9c8a-61329815420a
+ */
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        LinkedList ll= new LinkedList();
+        int a1=sc.nextInt();
+        Node head= new Node(a1);
+        ll.addToTheLast(head);
+        for (int i = 1; i < n; i++)
+        {
+            int a = sc.nextInt();
+            ll.addToTheLast(new Node(a));
+        }
+        Solution.checkLinkedListPalindrome(ll.head, ll.tail);
+    }
+}
+
+class Node
+{
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+class LinkedList
+{
+    Node head;
+    Node tail;
+    public void addToTheLast(Node node)
+    {
+        // If there is no node present:
+        if (head == null)
+        {
+            head = node;
+        }
+        else{
+            tail.next = node;
+            node.prev = tail;
+        }
+        tail = node;
+    }
+    void printList(Node node)
+    {
+        Node temp = node;
+        if (node == this.head) {
+            while (temp != null)
+            {
+                System.out.print(temp.data+" ");
+                temp = temp.next;
+            }
+        } else if (node == tail) {
+            while (temp != null) {
+                System.out.print(temp.data+" ");
+                temp = temp.prev;
+            }
+        }
+        System.out.println();
+    }
+
+}
+
+class Solution
+{
+    static void checkLinkedListPalindrome(Node head, Node tail){
+        // Checking for the Palindrome:
+        while (head != null && tail != null) {
+            if (head.data != tail.data) {
+                System.out.println("NO");
+                return;
+            }
+            head = head.next;
+            tail = tail.prev;
+        }
+        System.out.println("YES");
+    }
+
+}
