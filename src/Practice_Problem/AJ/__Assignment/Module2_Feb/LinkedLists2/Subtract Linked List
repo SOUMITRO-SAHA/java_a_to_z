@@ -1,0 +1,201 @@
+/*
+Subtract Linked Lists
+https://course.acciojob.com/idle?question=b42a7f80-83b5-416e-aec0-98607b1dc9af
+ */
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+class LL{
+    Node head;
+    Node tail;
+    LL(int val){
+        Node node = new Node(val);
+        head = node;
+        tail = node;
+    }
+    void addLast(int val) {
+        Node node = new Node(val);
+        // Checking for the Head node to be null:
+        if (head == null) {
+            head = node;
+            tail = node;
+            return;
+        }
+        tail.next = node;
+        tail = node;
+    }
+    static void printList(Node n){
+        while(n!=null){
+            System.out.print(n.data+" ");
+            n = n.next;
+        }
+        System.out.println();
+    }
+}
+
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int val = sc.nextInt();
+        LL ll1 = new LL(val);
+        for(int i=0; i<n-1; i++)
+        {
+            ll1.addLast(sc.nextInt());
+        }
+        int m = sc.nextInt();
+        val = sc.nextInt();
+        LL ll2 = new LL(val);
+        for(int i=0; i < m-1; i++)
+        {
+            ll2.addLast(sc.nextInt());
+        }
+
+        Node res = Solution.subtract(ll1.head, ll2.head);
+        LL.printList(res);
+    }
+}
+
+class Solution{
+    static Node reverse(Node head) {
+        Node temp = head;
+        Node prev = null;
+        while (temp != null) {
+            Node next = temp.next;
+            temp.next = prev;
+            // Updating the Current References:
+            prev = temp;
+            temp = next;
+        }
+
+        return prev;
+    }
+
+    private static Node removeInitialZeros(Node head) {
+        Node temp = head;
+        while (temp != null && temp.data == 0) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    static Node subtract(Node l1, Node l2)
+    {
+        Node ll1 = reverse(l1);
+        Node ll2 = reverse(l2);
+        // First, Finding the Small LL:
+        int len1 = countLength(ll1);
+        int len2 = countLength(ll2);
+
+        // Checking the Condition:
+        if (len2 > len1) {
+            // Switching the first and Second:
+            Node temp = ll1;
+            ll1 = ll2;
+            ll2 = temp;
+        } else if (len1 == len2) {
+            // check if the LL1 and LL2 are same or not:
+            if (sameLL(ll1, ll2)) {
+                return new Node(0);
+            }
+            // If not the same LL then assign the greater valued LL to the ll1:
+            if (ll1.data < ll2.data) {
+                Node temp = ll1;
+                ll1 = ll2;
+                ll2 = temp;
+            }
+        }
+        // After that, Calling SubtractLL Function:
+        Node res = subtractLL(ll1, ll2);
+        res = removeInitialZeros(res);
+        return res;
+    }
+
+    private static Node subtractLL(Node h1, Node h2) {
+        LL dummy = new LL(-1);
+        int carry = 0;
+        int val = 0;
+        while (h1 != null && h2 != null) {
+            int currentVal = h1.data;
+            int valToBeSubtracted = h2.data;
+            int valueToBeAdded = 0;
+            boolean plus10Happen = false;
+            // Checking for smaller Value:
+            if (h1.data < h2.data) {
+                currentVal += 10;
+                plus10Happen = true;
+            } else if (currentVal == valToBeSubtracted && currentVal-carry < valToBeSubtracted) {
+                currentVal += 10;
+                plus10Happen = true;
+            }
+
+            // Performing Subtraction:
+            val = (currentVal - valToBeSubtracted) - carry;
+            if (plus10Happen) {
+                carry = 1;
+            }
+            else {
+                carry = 0;
+            }
+
+            // Condition for Carry:
+            valueToBeAdded = val % 10;
+
+            // Adding the Value to the Answer:
+            dummy.addLast(valueToBeAdded);
+
+            // Increasing the References:
+            h1 = h1.next;
+            h2 = h2.next;
+        }
+
+        while (h1 != null) {
+            int currentVal = h1.data;
+            dummy.addLast(currentVal - carry);
+            carry = 0;
+            // Increasing the References:
+            h1 = h1.next;
+        }
+        while (h2 != null) {
+            int currentVal = h2.data;
+            dummy.addLast(currentVal - carry);
+            carry = 0;
+            // Increasing the References:
+            h2 = h2.next;
+        }
+
+        // Reversing the dummy:
+        return reverse(dummy.head.next);
+    }
+
+    private static boolean sameLL(Node l1, Node l2) {
+        while (l1 != null) {
+            if(l1.data != l2.data){
+                return false;
+            }
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+        return true;
+    }
+
+    private static int countLength(Node ll1) {
+        int count = 0;
+        Node temp = ll1;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+
+        return count;
+    }
+}

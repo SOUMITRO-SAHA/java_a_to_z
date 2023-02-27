@@ -1,0 +1,100 @@
+/*
+Unfold the Linked List:
+https://course.acciojob.com/idle?question=5a9b74ab-5b0d-48ee-9f86-8ea64b016649
+ */
+import java.util.*;
+
+class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data = data;
+        next = null;
+    }
+}
+class LinkedList{
+    Node head;
+    void add(int data ){
+        Node new_node = new Node(data);
+        if(head == null){
+            head = new_node;
+            return;
+        }
+        Node current = head;
+        while(current.next !=null){
+            current = current.next;
+        }
+        current.next = new_node;
+    }
+}
+
+class Solution {
+    static void unfold(Node head){
+        Node temp = head;
+        Node d1 = new Node(-1);
+        Node d2 = new Node(-1);
+        Node l1 = d1;
+        Node l2 = d2;
+        int i = 0;
+        while (temp != null) {
+            if (i % 2 == 0) {
+                // Even Case:
+                l1.next = temp;
+                l1 = temp;
+            } else {
+                // Odd Case:
+                l2.next = temp;
+                l2 = temp;
+            }
+            temp = temp.next;
+            i++;
+        }
+
+        // Removing the last References:
+        l2.next = null;
+        l1.next = null;
+        // Reversing the l2 LL:
+        l2 = reverser(d2.next);
+        // Merge two LL:
+        l1.next = l2;
+        head = d1.next;
+        d1.next = null;
+        // Printing
+        printLL(head);
+    }
+
+    private static Node reverser(Node head) {
+        Node curr = head;
+        Node prev = null;
+        while (curr != null) {
+            Node nextNode = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = nextNode;
+        }
+
+        return prev;
+    }
+
+    // Print
+    static void printLL(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        LinkedList l1= new LinkedList();
+        for(int i=0;i<n;i++){
+            l1.add(sc.nextInt());
+        }
+        Solution.unfold(l1.head);
+    }
+}

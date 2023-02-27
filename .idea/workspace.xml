@@ -4,42 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic">
-      <change afterPath="$PROJECT_DIR$/src/Input1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Delete Node in Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Delete a Node" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Insert node at a specific position in a Linked-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Merge Two Sorted Linked Lists" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Middle Node of Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Print in Reverse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists1/Remove Nth Node from End of List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Add two numbers represented by linked lists" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Linked List Cycle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Linked List Cycle 2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Middle Node of Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Multiply Lists" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Palindromic Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Rearrange List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Subtract Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Partitioning a Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Templates/DemoCF_1_mt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Templates/DemoCF_2_st" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Templates/DemoCF_3_matrix_st" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Templates/DemoCF_4_Array_st" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A - Watermelon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A. Domino piling" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A. Next Round" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A. Team" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_A/A. Way Too Long Words" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CF/Type_B/B. ICPC_Balloon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/CodeOfTheDay/Medium/First Circular Tour" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/TODO/Multiply List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LinkedList.java" afterDir="false" />
+    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update-LinkedList: Date_24-02-2023">
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Intersection of Two Linked Lists" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Rearrange Even Odd Nodes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Remove Duplicates from Sorted List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Segregating 0s, 1s, and 2s in a Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Sort a linked list of 0s and 1s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Unfold the Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists4/Clone a Linked List with Next and Random Pointer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists5/Delete Node in Doubly Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists5/Design Browser History" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists5/Insert node in a doubly linked list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists5/Rotate the List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Weekly_Contest/Feb_2023/W3_Feb/Garry and the linked list problem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Weekly_Contest/Feb_2023/W3_Feb/Reverse Sequence" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Weekly_Contest/Feb_2023/W3_Feb/Winning Position" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/CLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Subtract Linked List" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Subtract Linked List" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +76,7 @@
       <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\AJ\String\Easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_A_to_Z" />
@@ -104,12 +91,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Java_A_to_Z" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.OOPs.AccioJob.Module2_Feb.Wrapper_Class.Main" />
+      <option name="MAIN_CLASS_NAME" value="Theory.LinkedList.Circular_LL.Main" />
       <module name="Java_A_to_Z" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.OOPs.AccioJob.Module2_Feb.Wrapper_Class.*" />
+          <option name="PATTERN" value="Theory.LinkedList.Circular_LL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,26 +124,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Theory.OOPs.YouTube.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.OOPs.YouTube.Main" />
-      <module name="Java_A_to_Z" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Theory.OOPs.YouTube.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Projects.PizzaProject.Main" />
-        <item itemvalue="Application.Theory.OOPs.YouTube.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676880148856</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update-LinkedList: Date_24-02-2023">
+      <created>1677255907655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677255907655</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,7 +180,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic" />
+    <MESSAGE value="Update-LinkedList: Date_24-02-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update-LinkedList: Date_24-02-2023" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -201,6 +190,11 @@
           <url>file://$PROJECT_DIR$/src/Theory/LinkedList/Doubly_LL/DLL.java</url>
           <line>16</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java</url>
@@ -233,7 +227,6 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
-        <PinnedItemInfo parentTag="Node" memberName="next" />
         <PinnedItemInfo parentTag="Node" memberName="data" />
       </pinned-members>
     </pin-to-top-manager>

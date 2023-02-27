@@ -1,0 +1,26 @@
+/*
+Winning Position
+https://course.acciojob.com/idle?question=9ee57e0a-94d4-4eaf-b798-8fbf090fd05b
+*/
+import java.util.*;
+
+class Solution {
+    static int winningPosition(int n, int k){
+		// Base Case:
+		if(n == 1){
+		  return n;
+		}
+		// Recursive Call: Maping the Position.
+		return(winningPosition(n-1,k) + (k-1)) %n + 1;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int k = scn.nextInt();
+        Solution Obj =  new Solution();
+        System.out.print(Obj.winningPosition(n,k));
+    }
+}

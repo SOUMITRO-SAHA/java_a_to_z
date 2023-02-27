@@ -1,0 +1,66 @@
+/*
+Sort a linked list of 0s and 1s.
+https://course.acciojob.com/idle?question=f656f647-2a8c-4cd4-87e3-fc99ef2cf99e
+ */
+import java.util.*;
+
+class Solution {
+    static LinkedListNode sort01(LinkedListNode head){
+        LinkedListNode d0 = new LinkedListNode(-1);
+        LinkedListNode d1 = new LinkedListNode(-1);
+        LinkedListNode l0 = d0;
+        LinkedListNode l1 = d1;
+        LinkedListNode temp = head;
+        while (temp != null) {
+            if (temp.data == 0) {
+                l0.next = temp;
+                l0 = temp;
+            } else {
+                l1.next = temp;
+                l1 = temp;
+            }
+            temp = temp.next;
+        }
+
+        // Connecting the Two dummy ll:
+        l0.next = d1.next;
+        l1.next = null;
+        d1.next = null;
+        head = d0.next;
+        d0.next = null;
+        return head;
+    }
+}
+
+class LinkedListNode  {
+    int data;
+    LinkedListNode next;
+
+    public LinkedListNode(int data)  {
+        this.data = data;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        LinkedListNode head = new LinkedListNode(sc.nextInt());
+        LinkedListNode a = head;
+        for(int i=1;i<n;i++) {
+            LinkedListNode temp = new LinkedListNode(sc.nextInt());
+            a.next = temp;
+            a = temp;
+        }
+        LinkedListNode ans = Solution.sort01(head);
+        for(int i=0;i<n;i++) {
+            if(i == n-1) {
+                System.out.println(ans.data);
+            }
+            else {
+                System.out.print(ans.data + " ");
+            }
+            ans = ans.next;
+        }
+    }
+}

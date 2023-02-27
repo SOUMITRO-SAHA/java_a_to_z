@@ -1,0 +1,89 @@
+/*
+Design Browser History
+https://course.acciojob.com/idle?question=4f43830c-35af-43cd-b296-1cbee30f44ea
+*/
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        String homepage = sc.nextLine();
+        int n = sc.nextInt();
+        sc.nextLine();
+        BrowserHistory browserHistory = new BrowserHistory(homepage);
+        for(int i = 0; i < n; i++) {
+            String q = sc.nextLine();
+            String[] query = q.split("\\s+");
+            if(query[0].equals("visit")){
+                browserHistory.visit(query[1]);
+            } else if(query[0].equals("back")){
+                browserHistory.back(Integer.parseInt(query[1]));
+            } else if(query[0].equals("forward")){
+                browserHistory.forward(Integer.parseInt(query[1]));
+            }
+        }
+    }
+}
+class BrowserHistory {
+    DLL head;
+    DLL tail;
+    DLL curr;
+
+    public BrowserHistory(String homepage) {
+        DLL dll = new DLL(homepage);
+        this.head = dll;
+        this.tail = dll;
+        this.curr = dll;
+    }
+    public void visit(String url) {
+        DLL newSite = new DLL(url);
+        if (curr == tail) {
+            tail.next = newSite;
+            newSite.prev = tail;
+            tail = newSite;
+            curr = tail;
+        }
+        else{
+            curr.next = newSite;
+            newSite.prev = curr;
+            curr = newSite;
+            tail = curr;
+        }
+    }
+    public void back(int steps) {
+        DLL temp = this.curr;
+        for(int i = 0; i < steps; i++){
+            if (temp == this.head) {
+                break;
+            }
+            temp = temp.prev;
+        }
+        // Printing
+        curr = temp;
+        System.out.println(temp.data);
+
+    }
+    public void forward(int steps) {
+        DLL temp = this.curr;
+        for(int i=0; i < steps; i++){
+            if (temp == this.tail) {
+                break;
+            }
+            temp = temp.next;
+        }
+        // Printing
+        curr = temp;
+        System.out.println(temp.data);
+    }
+    static class DLL{
+        String data;
+        DLL next;
+        DLL prev;
+
+        DLL(String data){
+            this.data = data;
+            this.next = null;
+            this.prev = null;
+        }
+    }
+}

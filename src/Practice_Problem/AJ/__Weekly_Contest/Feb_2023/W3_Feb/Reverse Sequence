@@ -1,0 +1,119 @@
+/*
+Reverse Sequence
+https://course.acciojob.com/idle?question=90271386-c126-4222-93a3-d0618311f997
+ */
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+class Node
+{
+    int data;
+    Node next;
+    Node(int d) {data = d; next = null; }
+}
+class Main
+{
+    Node head;
+    Node tail;
+    public void addToTheLast(Node node)
+    {
+        if (head == null)
+        {
+            head = node;
+            tail = node;
+        }
+        else
+        {
+            tail.next = node;
+            tail = node;
+        }
+    }
+    void printList(Node head)
+    {
+        Node temp = head;
+        while (temp != null)
+        {
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+    public static void main(String[] args)throws IOException
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N= Integer.parseInt(br.readLine());
+        String[] S1 = br.readLine().split(" ");
+        Main llist = new Main();
+        int a1=Integer.parseInt(S1[0]);
+        Node head= new Node(a1);
+        llist.addToTheLast(head);
+        for (int i = 1; i < N; i++)
+        {
+            int a = Integer.parseInt(S1[i]);
+            llist.addToTheLast(new Node(a));
+        }
+        String[] S = br.readLine().split(" ");
+        int l = Integer.parseInt(S[0]);
+        int r = Integer.parseInt(S[1]);
+        Node newhead=Solution.reverseSequence(llist.head, l, r);
+        llist.printList(newhead);
+    }}
+
+class Solution
+{
+    public static Node reverseSequence(Node head, int l, int r)
+    {
+        Node dummy = new Node(-1);
+        dummy.next = head;
+        Node prevOfL = null;
+        Node nextOfR = null;
+        Node lNode = null;
+        Node rNode = null;
+        Node temp = head;
+        // Getting the Nodes:
+        int i = 1;
+        while (temp != null) {
+            if (i + 1 == l) {
+                prevOfL = temp;
+            }
+            if (i == l) {
+                lNode = temp;
+            }
+            if (i == r) {
+                rNode = temp;
+            }
+            temp = temp.next;
+            i++;
+        }
+        // Getting the Next Node of R:
+        if (prevOfL == null || l == 1) {
+            prevOfL = dummy;
+        }
+        if (rNode.next != null) {
+            nextOfR = rNode.next;
+        }
+
+        // Reversing the Node in range b/w l and r:
+        Node revHead = reverseLL(lNode, nextOfR);
+        // Theoretically, After reversing the last node will be lNode.
+        prevOfL.next = revHead;
+        lNode.next = nextOfR;
+
+        // Returning the Head:
+        return dummy.next;
+    }
+
+    private static Node reverseLL(Node l, Node r) {
+        Node curr = l;
+        Node prev = null;
+        while (curr != r) {
+            Node nextNode = curr.next;
+            // Updating the References:
+            curr.next = prev;
+            prev = curr;
+            curr = nextNode;
+        }
+        return prev;
+    }
+}

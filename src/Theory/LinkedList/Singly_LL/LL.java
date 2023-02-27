@@ -63,7 +63,7 @@ public class LL{
         }
 
         // Inserting the Current node in the desired position:
-        // 1st Connect the Next node the Current Node:
+        // Garry and the linked list problem Connect the Next node the Current Node:
         // 2nd then connect the temp node the Current Node:
         node.next = temp.next;
         temp.next = node;

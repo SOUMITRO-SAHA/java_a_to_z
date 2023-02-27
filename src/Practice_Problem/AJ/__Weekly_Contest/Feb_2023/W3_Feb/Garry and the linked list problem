@@ -1,0 +1,99 @@
+/*
+Garry and the linked list problem
+https://course.acciojob.com/idle?question=2db30fbb-cf07-47e9-b361-7928be2c9635
+*/
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+    Node(int d)
+    {
+        data = d;
+        next = null;
+    }
+}
+
+class Main {
+    Node head;
+    Node temp;
+
+    public void push(int new_data)
+    {
+        if(head == null){
+
+            head = new Node(new_data);
+
+            temp =head;
+        }
+        else{
+            Node new_node = new Node(new_data);
+
+            temp.next = new_node;
+
+            temp=temp.next;
+        }
+
+    }
+
+    public static void main(String args[])
+    {
+        Scanner sc =new Scanner(System.in);
+        Main ob = new Main();
+        int t=0;
+        t = sc.nextInt();
+        while(t-->0){
+            ob.head=null;
+            int n=0;
+            n=sc.nextInt();
+            int tn =n;
+            while(tn-->0){
+                int x=0;
+                x = sc.nextInt();
+                ob.push(x);
+            }
+            Solution obj = new Solution();
+            Node temp = obj.segregateList(ob.head);
+            while(temp!=null){
+                System.out.print(temp.data+" ");
+                temp=temp.next;
+            }
+            System.out.println();
+
+        }
+        sc.close();
+        return;
+    }
+}
+
+class Solution {
+    public Node segregateList(Node head) {
+        Node temp = head;
+        Node d1 = new Node(-1); // Even Position:
+        Node d2 = new Node(-1); // Odd Position :
+        Node l1 = d1;
+        Node l2 = d2;
+        int i = 0;
+        while (temp != null) {
+            if (i % 2 == 0) {
+                // Even Case:
+                l1.next = temp;
+                l1 = temp;
+            } else {
+                // Odd Case:
+                l2.next = temp;
+                l2 = temp;
+            }
+            temp = temp.next;
+            i++;
+        }
+
+        // Removing the last References:
+        l2.next = null;
+        // Merge two LL:
+        l1.next = d2.next;
+
+        return d1.next;
+    }
+}
+
