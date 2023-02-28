@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update-LinkedList: Date_24-02-2023">
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Intersection of Two Linked Lists" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Rearrange Even Odd Nodes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Remove Duplicates from Sorted List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Segregating 0s, 1s, and 2s in a Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Sort a linked list of 0s and 1s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists3/Unfold the Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists4/Clone a Linked List with Next and Random Pointer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists5/Delete Node in Doubly Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists5/Design Browser History" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists5/Insert node in a doubly linked list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists5/Rotate the List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Weekly_Contest/Feb_2023/W3_Feb/Garry and the linked list problem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Weekly_Contest/Feb_2023/W3_Feb/Reverse Sequence" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Weekly_Contest/Feb_2023/W3_Feb/Winning Position" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/CLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/Main.java" afterDir="false" />
+    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update-LinkedList: Date_28-02-2023&#10;Circular Linked List">
+      <change afterPath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Merge Sort" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sorting/MargeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sorting/Sorting Algorithms.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Subtract Linked List" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/LinkedLists2/Subtract Linked List" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +30,9 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Theory/Sorting/Sorting Algorithms.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,7 +61,7 @@
       <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\AJ\String\Easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.MargeSort">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_A_to_Z" />
@@ -111,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Projects.PizzaProject.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Projects.PizzaProject.Main" />
+    <configuration name="MargeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Sorting.MargeSort" />
       <module name="Java_A_to_Z" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Projects.PizzaProject.*" />
+          <option name="PATTERN" value="Theory.Sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MargeSort" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Projects.PizzaProject.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677255907655</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update-LinkedList: Date_28-02-2023&#10;Circular Linked List">
+      <created>1677524951266</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677524951267</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,7 +173,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic" />
     <MESSAGE value="Update-LinkedList: Date_24-02-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update-LinkedList: Date_24-02-2023" />
+    <MESSAGE value="Update-LinkedList: Date_28-02-2023&#10;Circular Linked List" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update-LinkedList: Date_28-02-2023&#10;Circular Linked List" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
