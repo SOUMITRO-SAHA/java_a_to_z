@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update: Date_28-02-2023&#10;Merge Sort Algorithm">
+    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update: Date_28-02-2023&#10;Merge Sort Algorithm [Complexity Analysis]">
+      <change afterPath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Quick Sort" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sorting/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/MargeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sorting/MargeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,15 +61,8 @@
       <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\AJ\String\Easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MargeSort">
+  <component name="RunManager" selected="Application.QuickSort">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Java_A_to_Z" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_A_to_Z" />
       <method v="2">
@@ -107,13 +102,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Sorting.QuickSort" />
+      <module name="Java_A_to_Z" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Theory.Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.MargeSort" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677568426172</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update: Date_28-02-2023&#10;Merge Sort Algorithm [Complexity Analysis]">
+      <created>1677569329286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677569329286</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,7 +195,8 @@
     <MESSAGE value="Update-LinkedList: Date_24-02-2023" />
     <MESSAGE value="Update-LinkedList: Date_28-02-2023&#10;Circular Linked List" />
     <MESSAGE value="Update: Date_28-02-2023&#10;Merge Sort Algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Date_28-02-2023&#10;Merge Sort Algorithm" />
+    <MESSAGE value="Update: Date_28-02-2023&#10;Merge Sort Algorithm [Complexity Analysis]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Date_28-02-2023&#10;Merge Sort Algorithm [Complexity Analysis]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -194,6 +210,11 @@
           <url>file://$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Theory/Sorting/QuickSort.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java</url>
