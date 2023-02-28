@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update-LinkedList: Date_28-02-2023&#10;Circular Linked List">
-      <change afterPath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Merge Sort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sorting/MargeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sorting/Sorting Algorithms.md" afterDir="false" />
+    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update: Date_28-02-2023&#10;Merge Sort Algorithm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/MargeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sorting/MargeSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677524951267</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update: Date_28-02-2023&#10;Merge Sort Algorithm">
+      <created>1677568426172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677568426172</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +179,8 @@
     <MESSAGE value="Pizza Project Completed&#10;- Basic OOPs Concepts&#10;- Low-level Design Basic" />
     <MESSAGE value="Update-LinkedList: Date_24-02-2023" />
     <MESSAGE value="Update-LinkedList: Date_28-02-2023&#10;Circular Linked List" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update-LinkedList: Date_28-02-2023&#10;Circular Linked List" />
+    <MESSAGE value="Update: Date_28-02-2023&#10;Merge Sort Algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Date_28-02-2023&#10;Merge Sort Algorithm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

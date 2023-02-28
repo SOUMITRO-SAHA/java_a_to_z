@@ -55,6 +55,11 @@ public class MargeSort {
     }
 
     // Merging an array using Recursion:
+    // TC: O(NlogN)
+    // SC: O(n + log n) => Log n is the Stack Space, and n is the space required for creating the array.
+    // Is is Adaptive? => No. ❌
+    // Is it Stable? => Yes. ✅ [Because of the '=' Sign, If we remove it then it will become unstable.]
+    // Recurrence Relation: T(n) = 2 T(n/2) + O(n)
     private static void mergeSort(int[] arr, int l, int r) {
         if (l < r) {
             int mid = l + (r - l) / 2;
