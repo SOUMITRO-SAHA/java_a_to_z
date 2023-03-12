@@ -5,8 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update: Date_28-02-2023&#10;Quick Sort Algorithm">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Quick Sort" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Quick Sort" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_March/Stack1/Next_Greater_Element/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/LeetCode/LinkedList/LL-Template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Merge Sort on Linked List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Quick Sort on Linked List" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/CLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Circular_LL/CLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Circular_LL/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Doubly_LL/DLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Doubly_LL/DLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Doubly_LL/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Doubly_LL/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Singly_LL/LL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Singly_LL/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Singly_LL/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Merge Sort" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/MergeSort_QuickSort/Implementing Merge Sort" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Quick Sort" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/MergeSort_QuickSort/Implementing Quick Sort" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Class-Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Class-Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q1_Removing_all_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Q1_Removing_all_X.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q3_Print_all_SubSets_using_iteration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Q3_Print_all_SubSets_using_iteration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Topic_1_Subset_SubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Topic_1_Subset_SubSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L7_Permutaion_on_Recursion/Q1_Print_all_Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L7_Permutaion_on_Recursion/Q1_Print_all_Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q1_Paths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q1_Paths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q2_Path_Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q2_Path_Count.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q3_Diagonal_Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q3_Diagonal_Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q4_Maze_With_Obstacles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q4_Maze_With_Obstacles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/Insertion_Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Insertion_Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/MargeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/MargeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/Sorting Algorithms.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Sorting Algorithms.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +64,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/Theory/Sorting/Sorting Algorithms.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Sorting Algorithms.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,14 +93,7 @@
       <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\AJ\String\Easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuickSort">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Java_A_to_Z" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_A_to_Z" />
@@ -74,25 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.LinkedList.Circular_LL.Main" />
-      <module name="Java_A_to_Z" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Theory.LinkedList.Circular_LL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MargeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Sorting.MargeSort" />
+      <option name="MAIN_CLASS_NAME" value="Theory.Algorithms.Sorting.MargeSort" />
       <module name="Java_A_to_Z" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.Sorting.*" />
+          <option name="PATTERN" value="Theory.Algorithms.Sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,11 +115,11 @@
       </method>
     </configuration>
     <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Sorting.QuickSort" />
+      <option name="MAIN_CLASS_NAME" value="Theory.Algorithms.Sorting.QuickSort" />
       <module name="Java_A_to_Z" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.Sorting.*" />
+          <option name="PATTERN" value="Theory.Algorithms.Sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,13 +127,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
+      <module name="Java_A_to_Z" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortLL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortLL" />
+      <module name="Java_A_to_Z" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.SortLL" />
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.MargeSort" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677574910541</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update: Date_28-02-2023&#10;Quick Sort Algorithm">
+      <created>1677575187478</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677575187478</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,24 +243,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Theory/LinkedList/Doubly_LL/DLL.java</url>
+          <url>file://$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Doubly_LL/DLL.java</url>
           <line>16</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Circular_LL/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Theory/Sorting/QuickSort.java</url>
+          <url>file://$PROJECT_DIR$/src/Theory/Algorithms/Sorting/QuickSort.java</url>
           <line>8</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Solution.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java</url>
+          <url>file://$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java</url>
           <line>15</line>
-          <properties class="Theory.Recursion.L6_String_Subset_Subsequence.Q2_Skipping_a_word_form_String" method="removeCanButNotCandy">
+          <properties class="Theory.DataStructure.Recursion.L6_String_Subset_Subsequence.Q2_Skipping_a_word_form_String" method="removeCanButNotCandy">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -241,9 +281,9 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q2_Path_Count.java</url>
+          <url>file://$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q2_Path_Count.java</url>
           <line>8</line>
-          <properties class="Theory.Recursion.L8_Maze_Problems.Q2_Path_Count" method="pathCount">
+          <properties class="Theory.DataStructure.Recursion.L8_Maze_Problems.Q2_Path_Count" method="pathCount">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -259,5 +299,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Java_A_to_Z$Main.ic" NAME="Main Coverage Results" MODIFIED="1675262922819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Java_A_to_Z$Solution.ic" NAME="Solution Coverage Results" MODIFIED="1677768060460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
