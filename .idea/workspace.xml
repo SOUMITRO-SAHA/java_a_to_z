@@ -4,43 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update: Date_28-02-2023&#10;Quick Sort Algorithm">
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_March/Stack1/Next_Greater_Element/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/LeetCode/LinkedList/LL-Template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Merge Sort on Linked List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Quick Sort on Linked List" afterDir="false" />
+    <list default="true" id="8c2701ee-f577-4099-a1f1-0d96212db640" name="Changes" comment="Update: Date_12-08-2023&#10;Stack DS Updated">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_March/Stack1/Stock_Span_Problem/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Stack_and_Queue/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/CLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Circular_LL/CLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Circular_LL/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Circular_LL/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Doubly_LL/DLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Doubly_LL/DLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Doubly_LL/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Doubly_LL/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Singly_LL/LL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Singly_LL/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/LinkedList/Singly_LL/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/LinkedList/Singly_LL/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Merge Sort" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/MergeSort_QuickSort/Implementing Merge Sort" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/MergeSort_QuickSort/Implementing Quick Sort" beforeDir="false" afterPath="$PROJECT_DIR$/src/Practice_Problem/AJ/__Assignment/Module2_Feb/MergeSort_QuickSort/Implementing Quick Sort" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Class-Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Class-Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q1_Removing_all_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Q1_Removing_all_X.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Q2_Skipping_a_word_form_String.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Q3_Print_all_SubSets_using_iteration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Q3_Print_all_SubSets_using_iteration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L6_String_Subset_Subsequence/Topic_1_Subset_SubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L6_String_Subset_Subsequence/Topic_1_Subset_SubSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L7_Permutaion_on_Recursion/Q1_Print_all_Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L7_Permutaion_on_Recursion/Q1_Print_all_Permutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q1_Paths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q1_Paths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q2_Path_Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q2_Path_Count.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q3_Diagonal_Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q3_Diagonal_Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/L8_Maze_Problems/Q4_Maze_With_Obstacles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/L8_Maze_Problems/Q4_Maze_With_Obstacles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Recursion/Lecture5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/DataStructure/Recursion/Lecture5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/Insertion_Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Insertion_Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/MargeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/MargeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sorting/Sorting Algorithms.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Algorithms/Sorting/Sorting Algorithms.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,14 +46,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\CF\Type_B" />
@@ -93,7 +63,7 @@
       <recent name="D:\Coding Workplace [Programming]\Java_A_to_Z\src\Practice_Problem\AJ\String\Easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_A_to_Z" />
@@ -101,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MargeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Algorithms.Sorting.MargeSort" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.DataStructure.Stack_and_Queue.Main" />
       <module name="Java_A_to_Z" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.Algorithms.Sorting.*" />
+          <option name="PATTERN" value="Theory.DataStructure.Stack_and_Queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.SortLL" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.MargeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677575187478</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update: Date_12-08-2023&#10;Stack DS Updated">
+      <created>1678643361859</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678643361859</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +214,8 @@
     <MESSAGE value="Update: Date_28-02-2023&#10;Merge Sort Algorithm" />
     <MESSAGE value="Update: Date_28-02-2023&#10;Merge Sort Algorithm [Complexity Analysis]" />
     <MESSAGE value="Update: Date_28-02-2023&#10;Quick Sort Algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Date_28-02-2023&#10;Quick Sort Algorithm" />
+    <MESSAGE value="Update: Date_12-08-2023&#10;Stack DS Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Date_12-08-2023&#10;Stack DS Updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
