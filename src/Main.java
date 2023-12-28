@@ -4,6 +4,21 @@ class Keyboard {
     String connectivityType;
     String keyType;
 
+    // Constructor:
+    // Default Constructor
+    Keyboard() {
+        this.id = 0;
+        this.colour = "Black";
+        this.connectivityType = "Bluetooth";
+        this.keyType = "Mechanical";
+    }
+
+    // Parameterized Constructor:
+    Keyboard(String colour, String connectivityType, String keyType) {
+        this.colour = colour;
+        this.connectivityType = connectivityType;
+        this.keyType = keyType;
+    }
 }
 class Main{
     public static void main(String[] args) {
