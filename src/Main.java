@@ -21,6 +21,15 @@ class Keyboard {
         this.keyType = keyType;
     }
 
+    // Copy Constructor:
+    // Copy Constructor use to clone an object
+    Keyboard(Keyboard k){
+        this.id = k.id;
+        this.colour = k.colour;
+        this.connectivityType = k.colour;
+        this.keyType = k.keyType;
+    }
+
     // Getter and Setter methods for encapsulation
     public int getId() {
         return id;
@@ -61,12 +70,6 @@ class Main{
         // Creating a new Keyboard object using the default constructor
         Keyboard k1 = new Keyboard();
 
-       // Avoiding direct attribute access and using setters for a safer code
-//        k1.colour = "Black"; // Not recommended due to potential mistakes
-//        k1.connectivityType = "Bluetooth";
-//        k1.keyType = "Mechanical";
-//        System.out.println("My Keyboard color is " + k1.colour + " and Type of " + k1.keyType + " and It is a " + k1.connectivityType + " keyboard.");
-
         // Setting the values using setter methods
         k1.setId(1);
         k1.setColour("Black");
@@ -74,9 +77,18 @@ class Main{
         k1.setKeyType("Mechanical");
 
         // Getting the Values:
-        System.out.println("My Keyboard color is " + k1.getColour() + " and Type of " + k1.getKeyType()
+        System.out.println("My Keyboard 1: color is " + k1.getColour() + " and Type of " + k1.getKeyType()
                 + " and It is a " + k1.getConnectivityType() + " keyboard.");
-        // But again this is not the ultimate solution from preventing some to access the attributes directly, to achive that we are goint to study
-        // access modifier in later.
+
+
+        // Copy Constructor
+        Keyboard kCopy = new Keyboard(k1);
+        System.out.println("My Keyboard Copy: color is " + kCopy.getColour() + " and Type of " + kCopy.getKeyType()
+                + " and It is a " + kCopy.getConnectivityType() + " keyboard.");
+
+        // O/P:
+        //OOPs
+        //My Keyboard 1: color is Black and Type of Mechanical and It is a Bluetooth keyboard.
+        //My Keyboard Copy: color is Black and Type of Mechanical and It is a Black keyboard.
     }
 }
