@@ -1,163 +1,45 @@
-// Explore Concepts through Commits: To delve into a specific topic, navigate to the corresponding commit.
+class Main {
+    public static void main(String[] args) {
+        // Example 1: Creating humans and accessing the population
+        Human person1 = new Human("Soumitra");
+        Human person2 = new Human("Ryan");
 
-// OLD:
-//class Keyboard {
-//    int id;
-//    String colour;
-//    String connectivityType;
-//    String keyType;
-//
-//    // Constructor:
-//    // Default Constructor
-//    Keyboard() {
-//        this.id = 0;
-//        this.colour = "Black";
-//        this.connectivityType = "Bluetooth";
-//        this.keyType = "Mechanical";
-//    }
-//
-//    // Parameterized Constructor:
-//    // Customizes the Keyboard attributes based on user input
-//    // 2 Parameter
-//    public Keyboard(int id, String colour) {
-//        this.id = id;
-//        this.colour = colour;
-//    }
-//
-//    // 3 Parameter
-//    public Keyboard(int id, String colour, String connectivityType) {
-//        this.id = id;
-//        this.colour = colour;
-//        this.connectivityType = connectivityType;
-//    }
-//
-//    // 4 Parameter
-//    Keyboard(String colour, String connectivityType, String keyType) {
-//        this.colour = colour;
-//        this.connectivityType = connectivityType;
-//        this.keyType = keyType;
-//    }
-//
-//    // Copy Constructor:
-//    // Copy Constructor use to clone an object
-//    Keyboard(Keyboard k){
-//        this.id = k.id;
-//        this.colour = k.colour;
-//        this.connectivityType = k.colour;
-//        this.keyType = k.keyType;
-//    }
-//
-//    // Getter and Setter methods for encapsulation
-//    public int getId() {
-//        return id;
-//    }
-//
-//    public void setId(int id) {
-//        this.id = id;
-//    }
-//
-//    public String getColour() {
-//        return colour;
-//    }
-//
-//    public void setColour(String colour) {
-//        this.colour = colour;
-//    }
-//
-//    public String getConnectivityType() {
-//        return connectivityType;
-//    }
-//
-//    public void setConnectivityType(String connectivityType) {
-//        this.connectivityType = connectivityType;
-//    }
-//
-//    public String getKeyType() {
-//        return keyType;
-//    }
-//
-//    public void setKeyType(String keyType) {
-//        this.keyType = keyType;
-//    }
-//}
+        // Accessing the population using the class name
+        int totalPopulation = Human.population;
+        System.out.println("Total Population: " + totalPopulation);
 
-// New: usage of "this" keyword:
-class Keyboard {
-    int id;
-    String colour;
-    String connectivityType;
-    String keyType;
+        // Example 2: Creating more humans and updating the population
+        Human person3 = new Human("Charlie");
+        Human person4 = new Human("David");
 
-    // Constructor:
-    // Default Constructor
-    Keyboard() {
-        this.id = 0;
-        this.colour = "Black";
-        this.connectivityType = "Bluetooth";
-        this.keyType = "Mechanical";
-    }
+        // Accessing the population again
+        totalPopulation = Human.population;
+        System.out.println("Updated Total Population: " + totalPopulation);
 
-    // Parameterized Constructor:
-    // Customizes the Keyboard attributes based on user input
-    // 2 Parameter
-    public Keyboard(int id, String colour) {
-        this.id = id;
-        this.colour = colour;
-    }
-
-    // 3 Parameter
-    public Keyboard(int id, String colour, String connectivityType) {
-        this(id, colour);
-        this.connectivityType = connectivityType;
-    }
-
-    // 4 Parameter
-    Keyboard(int id, String colour, String connectivityType, String keyType) {
-        this(id, colour, connectivityType);
-        this.keyType = keyType;
-    }
-
-    // Copy Constructor:
-    // Copy Constructor use to clone an object
-    Keyboard(Keyboard k){
-        this(k.id, k.colour, k.connectivityType, k.keyType);
-    }
-
-    // Getter and Setter methods for encapsulation
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getColour() {
-        return colour;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
-    }
-
-    public String getConnectivityType() {
-        return connectivityType;
-    }
-
-    public void setConnectivityType(String connectivityType) {
-        this.connectivityType = connectivityType;
-    }
-
-    public String getKeyType() {
-        return keyType;
-    }
-
-    public void setKeyType(String keyType) {
-        this.keyType = keyType;
+        //O/P:
+        //Soumitra is born! Current Population: 1
+        //Ryan is born! Current Population: 2
+        //Total Population: 2
+        //Charlie is born! Current Population: 3
+        //David is born! Current Population: 4
+        //Updated Total Population: 4
     }
 }
-class Main{
-    public static void main(String[] args) {
-        System.out.println("OOPs");
+
+class Human {
+    // Static => this attribute belongs to the class, not the instance of the class
+    // It is shared among all instances of the class
+    static int population;
+
+    // Instance attribute
+    String name;
+
+    // Constructor to initialize the instance attribute
+    public Human(String name) {
+        this.name = name;
+        // Incrementing the population each time a new human is created
+        population++;
+        // Outputting a message for demonstration
+        System.out.println(name + " is born! Current Population: " + population);
     }
 }
